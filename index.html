@@ -47,7 +47,26 @@
   
   
 
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
 
+</script>
+
+
+
+  
+    <script src="/lib/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
   
 
 </head>
@@ -59,7 +78,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -75,7 +94,7 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="https://www.yingle.cf" target="_blank">技术笔记</a></li>
 			
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
 			
@@ -193,7 +212,7 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://www.yingle.cf">技术笔记</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
@@ -212,93 +231,6 @@
           </div>
           <div id="js-content" class="content-ll">
             
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/11/29/hello-world/" target="_blank">Hello World</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/11/29/hello-world/" class="archive-article-date">
-        <time datetime="2020-11-29T07:42:45.916Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/29/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
 
   
     <article id="post-2020-04-01-tech-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -532,7 +464,7 @@
 <h2 id="挑选标准"><a href="#挑选标准" class="headerlink" title="挑选标准"></a>挑选标准</h2><p>跟踪误差<br>各大基金机构均可分析跟踪误差，要挑选跟踪误差小的指数基金</p>
 <p>成本<br>场内的成本相对比较低，场外的不同基金存在着一些差异，相同板块的基金，选低成本不选高</p>
 <p>规模<br>选大不选小，一是规模大的指数基金流动性比较好，不怕买不进，卖不出，也不会有清盘风险，二是规模越大的基金，操作受到的影响就越小，跟踪误差也会相对较小</p>
-<h2 id="主动性指数基金"><a href="#主动性指数基金" class="headerlink" title="主动性指数基金"></a>主动性指数基金</h2><h3 id="增强型基金"><a href="#增强型基金" class="headerlink" title="增强型基金"></a>增强型基金</h3><p>纯属生活物语，我是乐子，多多指教！<br><a href="mailto:&#x79;&#105;&#x6e;&#103;&#x6c;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#54;&#51;&#x2e;&#99;&#111;&#109;">&#x79;&#105;&#x6e;&#103;&#x6c;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#54;&#51;&#x2e;&#99;&#111;&#109;</a></p>
+<h2 id="主动性指数基金"><a href="#主动性指数基金" class="headerlink" title="主动性指数基金"></a>主动性指数基金</h2><h3 id="增强型基金"><a href="#增强型基金" class="headerlink" title="增强型基金"></a>增强型基金</h3><p>纯属生活物语，我是乐子，多多指教！<br><a href="mailto:&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;">&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;</a></p>
 
     
 
@@ -647,7 +579,7 @@
 <li><p>测试修改成功<br><img src="../../../../img/20190823/1566521577345.png" alt="1566521577345"></p>
 </li>
 </ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#x67;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;">&#121;&#105;&#x6e;&#x67;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#110;&#103;&#108;&#101;&#x31;&#57;&#x39;&#x31;&#64;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#x79;&#105;&#110;&#103;&#108;&#101;&#x31;&#57;&#x39;&#x31;&#64;&#49;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;</a></p>
 
     
 
@@ -747,7 +679,7 @@
 <p>为兼容24之上版本代码做了些改变报错，查阅资料</p>
 <pre><code>android.support.v4.content.FileProvider-&gt;androidx.core.content.FileProvider</code></pre>
 <p>问题解决</p>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;">&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#103;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#109;">&#121;&#105;&#x6e;&#103;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#109;</a></p>
 
     
 
@@ -860,7 +792,7 @@
 <p><img src="https://i.imgur.com/Zdl1etu.png"></p>
 <p>git冲突内容</p>
 <p>其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。<br>解决完成之后，就可以正常的提交了。</p>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#x6d;">&#121;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#x6d;</a></p>
 
     
 
@@ -983,7 +915,7 @@
 <pre><code> CATCH CX_AI_SYSTEM_FAULT INTO exref.
   zflag = exref-&gt;GET_TEXT( ).</code></pre>
 <p>值得注意的是，实现该功能，不需要创建RFC连接</p>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#x69;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#x36;&#x33;&#46;&#99;&#x6f;&#109;">&#121;&#x69;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#x36;&#x33;&#46;&#99;&#x6f;&#109;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#x69;&#x6e;&#x67;&#x6c;&#101;&#49;&#57;&#57;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#x69;&#x6e;&#x67;&#x6c;&#101;&#49;&#57;&#57;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 
     
 
@@ -1099,7 +1031,7 @@
  services.bat remove</code></pre>
 </li>
 </ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#x79;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#110;&#103;&#x6c;&#101;&#49;&#x39;&#x39;&#49;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#121;&#105;&#110;&#103;&#x6c;&#101;&#49;&#x39;&#x39;&#49;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
 
     
 
@@ -1310,7 +1242,7 @@ acg.jdsn.com.cn</code></pre>
 -
 
 ExtraMap.get(article.getExtra())==&gt;</code></pre>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#x39;&#x39;&#49;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#x39;&#x39;&#49;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#x6e;&#x67;&#x6c;&#101;&#x31;&#x39;&#x39;&#x31;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#x79;&#105;&#x6e;&#x67;&#x6c;&#101;&#x31;&#x39;&#x39;&#x31;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
 
     
 
@@ -1338,6 +1270,93 @@ ExtraMap.get(article.getExtra())==&gt;</code></pre>
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2018/05/15/2018-05-15-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2018/04/01/hello-world/" target="_blank">Hello World</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2018/04/01/hello-world/" class="archive-article-date">
+        <time datetime="2018-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2018/04/01/hello-world/">展开全文 >></a>
     </p>
     
 
