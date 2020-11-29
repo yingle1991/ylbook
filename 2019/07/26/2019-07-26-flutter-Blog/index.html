@@ -6,20 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | ylBook</title>
+  <title>如何解决android.support.v4.content.FileProvider异常错误的问题？ | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="问题如下 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465Using hardware rendering with device Android SDK built for x86 64. If you">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/11/29/hello-world/index.html">
+<meta property="og:title" content="如何解决android.support.v4.content.FileProvider异常错误的问题？">
+<meta property="og:url" content="http://example.com/2019/07/26/2019-07-26-flutter-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="问题如下 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465Using hardware rendering with device Android SDK built for x86 64. If you">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-29T07:42:45.916Z">
-<meta property="article:modified_time" content="2020-11-29T07:42:45.916Z">
+<meta property="article:published_time" content="2019-07-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-29T10:54:41.239Z">
 <meta property="article:author" content="闾丘齐心">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="协作开发">
+<meta property="article:tag" content="flutter">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/ylbook/atom.xml" title="ylBook" type="application/atom+xml">
@@ -211,14 +214,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2019-07-26-flutter-Blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      如何解决android.support.v4.content.FileProvider异常错误的问题？
     </h1>
   
 
@@ -230,8 +233,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/ylbook/2020/11/29/hello-world/" class="archive-article-date">
-        <time datetime="2020-11-29T07:42:45.916Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
+<a href="/ylbook/2019/07/26/2019-07-26-flutter-Blog/" class="archive-article-date">
+        <time datetime="2019-07-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
 </a>
 
   
@@ -244,7 +247,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">75字</span>
+      <span class="post-count">523字</span>
     </span>
   </span>
 
@@ -253,7 +256,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -264,19 +267,13 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <p>问题如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">Using hardware rendering with device Android SDK built for x86 64. If you get graphics artifacts, consider enabling software rendering with</span><br><span class="line">&quot;--enable-software-rendering&quot;.</span><br><span class="line">Launching lib&#x2F;main.dart on Android SDK built for x86 64 in debug mode...</span><br><span class="line">Initializing gradle...                                              1.5s</span><br><span class="line">Resolving dependencies...                                          17.3s</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:14: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">import android.support.v4.content.FileProvider;</span><br><span class="line">                                 ^</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:60: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">               Uri uri7 &#x3D; android.support.v4.content.FileProvider.getUriForFile(this,&quot;com.example.salesman_field.android7.fileprovider&quot;, apkFile);  </span><br><span class="line">                                                    ^</span><br><span class="line">2 ������</span><br><span class="line"></span><br><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">Execution failed for task &#39;:app:compileDebugJavaWithJavac&#39;.</span><br><span class="line">&gt; Compilation failed; see the compiler error output for details.</span><br><span class="line"></span><br><span class="line">* Try:</span><br><span class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.</span><br><span class="line"></span><br><span class="line">* Get more help at https:&#x2F;&#x2F;help.gradle.org</span><br><span class="line"></span><br><span class="line">BUILD FAILED in 46s</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;...</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;... Done                        46.8s</span><br><span class="line">*******************************************************************************************</span><br><span class="line">The Gradle failure may have been because of AndroidX incompatibilities in this Flutter app.</span><br><span class="line">See https:&#x2F;&#x2F;goo.gl&#x2F;CP92wY for more information on the problem and how to fix it.</span><br><span class="line">*******************************************************************************************</span><br><span class="line">Gradle task assembleDebug failed with exit code 1</span><br><span class="line">PS F:\dartSpace\flutter\Demo\salesman_field&gt; flutter run</span><br><span class="line">Using hardware rendering with device Android SDK built for x86 64. If you get graphics artifacts, consider enabling software rendering with</span><br><span class="line">&quot;--enable-software-rendering&quot;.</span><br><span class="line">Launching lib&#x2F;main.dart on Android SDK built for x86 64 in debug mode...</span><br><span class="line">Initializing gradle...                                              2.8s</span><br><span class="line">Resolving dependencies...                                          33.7s</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:61: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">               Uri uri7 &#x3D; android.support.v4.content.FileProvider.getUriForFile(this,&quot;com.example.salesman_field.android7.fileprovider&quot;, apkFile);  </span><br><span class="line">                                                    ^</span><br><span class="line">1 ������</span><br><span class="line"></span><br><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">Execution failed for task &#39;:app:compileDebugJavaWithJavac&#39;.</span><br><span class="line">&gt; Compilation failed; see the compiler error output for details.</span><br><span class="line"></span><br><span class="line">* Try:</span><br><span class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.</span><br><span class="line"></span><br><span class="line">* Get more help at https:&#x2F;&#x2F;help.gradle.org</span><br><span class="line"></span><br><span class="line">BUILD FAILED in 26s</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;...</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;... Done                        27.4s</span><br><span class="line">*******************************************************************************************</span><br><span class="line">The Gradle failure may have been because of AndroidX incompatibilities in this Flutter app.</span><br><span class="line">See https:&#x2F;&#x2F;goo.gl&#x2F;CP92wY for more information on the problem and how to fix it.</span><br><span class="line">*******************************************************************************************</span><br><span class="line">Gradle task assembleDebug failed with exit code 1</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>为兼容24之上版本代码做了些改变报错，查阅资料</p>
+<pre><code>android.support.v4.content.FileProvider-&gt;androidx.core.content.FileProvider</code></pre>
+<p>问题解决</p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;">&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;</a></p>
 
     
 
@@ -323,7 +320,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/ylbook/2020/11/29/hello-world/" title="Hello World" target="_blank">http://example.com/ylbook/2020/11/29/hello-world/</a>
+          <a href="http://example.com/ylbook/2019/07/26/2019-07-26-flutter-Blog/" title="如何解决android.support.v4.content.FileProvider异常错误的问题？" target="_blank">http://example.com/ylbook/2019/07/26/2019-07-26-flutter-Blog/</a>
         </li>
         
         <li>
@@ -340,6 +337,25 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">flutter</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -390,7 +406,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/29/hello-world/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2019/07/26/2019-07-26-flutter-Blog/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -405,9 +421,18 @@
 
 <nav id="article-nav">
   
+    <a href="/ylbook/2019/08/23/2019-08-23-flutter-Blog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          如何初始化本地项目到远程git仓库
+        
+      </div>
+    </a>
   
-    <a href="/ylbook/2020/04/01/2020-04-01-tech-Blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）</div>
+  
+    <a href="/ylbook/2019/07/13/2019-07-13-git-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git出现代码冲突怎么办？</div>
       <i class="icon-circle-right"></i>
     </a>
   

@@ -301,6 +301,1079 @@
 
 
   
+    <article id="post-2020-04-01-tech-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2020/04/01/2020-04-01-tech-Blog/" target="_blank">记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2020/04/01/2020-04-01-tech-Blog/" class="archive-article-date">
+        <time datetime="2020-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="用startup-bat启动"><a href="#用startup-bat启动" class="headerlink" title="用startup.bat启动"></a>用startup.bat启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”<br>问题得到解决</p>
+<h3 id="用service启动"><a href="#用service启动" class="headerlink" title="用service启动"></a>用service启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”<br>删除service重新注册一遍<br>未验证，猜测解决办法</p>
+<p>另一个解决方案是直接修改注册表里的值，重启tomcat就好了，注册表路径：HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\Tomcat服务名\Parameters\Java</p>
+<p>找到Options</p>
+<p>增加-Dfile.encoding=UTF-8</p>
+<p>技术分享，我是认真的！我是乐子，多多指教！</p>
+<p> <img src="../../../../img/passme.png" alt="关注我得到更多信息"></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2020/04/01/2020-04-01-tech-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-09-29-live-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/09/29/2019-09-29-live-Blog/" target="_blank">怎样让你的钱生钱？</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/09/29/2019-09-29-live-Blog/" class="archive-article-date">
+        <time datetime="2019-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>基金定投</p>
+<p>基金定投就是基金定期投资，常见的有周定期，两周定期，月定期，周定期周期比较短，本人不建议，两周定投与月定投，大数据显示差异不大，我们可以依个人情况进行规划投资。</p>
+<p>定投虽然可以有效避开熊市的干扰，减少熊市的损失，但定投并不是永远最好的，在经济萧条，股市不确定性的时候定投是最好的选择，但是假如现在股市大盘已经跌到2600点，明显点位很低，就不再适合在做定投，可以每两周一次分三个月将可用资产加到仓位，以应对股市反弹带来的收益。</p>
+<p>大部分我们普通投资者，理解的定投就是定期投资，而不去进行后期管理，这就造成，有的人年收益50%-70%，而你的收益只在1.9%。</p>
+<p>基金投资并不只是选中一个板块，无限期的定时投资，产品需要根据经济状况以及政策支持进行替换，资产大比例，要根据后期实际情况大比例调整，比如今年，九月份，军工产业比较强势，可以加大军工产业的投资比例，还有最关键的管理就是止盈，大家都知道“不要追涨杀跌，而应该低买高卖”，要有满足感，在未来市场预测不怎么乐观，以及现有盈利已经达到自己的“目标标准”，可以适当的减仓，单产品盈利20%-30%减仓五分之一，单产品盈利40% 减仓四分之一，当单产品盈利达到50%，就应该注意了，这时候已经很危险了，我们应该减仓1/2以上，入兜为安，以免市场波动造成我们更大的损失，也不影响我们得到更多的盈利。</p>
+<p>纯属生活物语，我是乐子，多多指教！</p>
+<p> <img src="../../../../img/passme.png" alt="关注我得到更多信息"></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/09/29/2019-09-29-live-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-09-28-live-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/09/28/2019-09-28-live-Blog/" target="_blank">初识指数基金</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/09/28/2019-09-28-live-Blog/" class="archive-article-date">
+        <time datetime="2019-09-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>《富爸爸穷爸爸》罗伯特开篇就讲到，作为孩子时就有创造“金钱”的想法，更何况我们作为开发者的成年人，更是想让钱生钱，“鸡”下蛋。方法有很多：股票、房地产、保险、黄金、石油等等，我比较偏爱与基金，总感觉基金的风险可控！</p>
+<p>股神巴菲特的“偏爱”</p>
+<p>  股神巴菲特也非常钟爱指数基金，在过去20多年间，他一直不厌其烦的像普通投资者推荐指数基金。在一次股东大会上当有人问道股神身后事会怎么处理，他居然建议太太在他死后去买标普500指数基金。然而过去几十年，巴菲特自己的伯克希尔哈撒韦的股票远远拍赢了标普500指数的涨幅，为什么他不建议自己的起子买自己家的股票？<br>  并不是巴菲特不信任自己的接班人，而是他深刻理解人性的弱点—知易行难，很多道理我们都懂“不要追涨杀跌，而应该低买高卖”、“别人恐惧你贪婪，别人贪婪你恐惧”。但如果让你拿着真金白银跑到股市投资，你就全忘光了，往往别人贪婪你更贪，别人恐惧，你更恐惧，结果自想而知。巴菲特多次提到过，普通投资者长期跑不过大盘的原因就是追涨杀跌，根据组织机构的小道消息以及技术分析盲目频繁买卖股票，浪费了大部分手续费，其实不光普通投资者，主动型基金的基金经理同样有这样的弱点。所以巴菲特很是偏爱指数基金</p>
+<p>  下面我们就简单了解一下指数基金：</p>
+<h1 id="指数基金分为被动型与主动型两种类型"><a href="#指数基金分为被动型与主动型两种类型" class="headerlink" title="指数基金分为被动型与主动型两种类型"></a>指数基金分为被动型与主动型两种类型</h1><h2 id="被动型指数基金"><a href="#被动型指数基金" class="headerlink" title="被动型指数基金"></a>被动型指数基金</h2><p>跟随股票指数投资，“百分百”的按比例投资于股市，指数涨则赚，指数跌则赔，费用也相对来说比较低！</p>
+<h3 id="ETF基金"><a href="#ETF基金" class="headerlink" title="ETF基金"></a>ETF基金</h3><p>由基金机构按批发价格买到手，再在二级市场以零售价格卖个普通投资者的运营方式。<br>只在二级市场买得到，必须开通证券账户，与股票相同交易法则，交易当天买卖，总结几个投资秘诀</p>
+<h4 id="“躺赚”秘诀"><a href="#“躺赚”秘诀" class="headerlink" title="“躺赚”秘诀"></a>“躺赚”秘诀</h4><p>溢价：批发价小于零售价；折价：批发价大于零售价<br>规避溢价，入手折价<br>建议：规模2亿以下不要碰，10亿以上才可考虑</p>
+<h3 id="ETF联接基金"><a href="#ETF联接基金" class="headerlink" title="ETF联接基金"></a>ETF联接基金</h3><p>同ETF基金，普通投资者可在各个基金机构自由申赎的基金，95%以上需要投资于关联的ETF基金</p>
+<h3 id="LOF"><a href="#LOF" class="headerlink" title="LOF"></a>LOF</h3><p>中国市场自主创造的一种基金品种，可在一二级市场自由玩弄，是ETF+ETF连接基金的结合体</p>
+<h3 id="普通指数基金"><a href="#普通指数基金" class="headerlink" title="普通指数基金"></a>普通指数基金</h3><p>仓位往往只有90%、92%，最多也就94%，股市疯狂下跌时，投资者纷纷赎回，就不得不在地位卖出股票，造成很大的实际损失，而当股市疯狂上涨时，投资者纷纷申购，来不及建仓，基金真实收益远低于指数理论收益。</p>
+<h2 id="挑选标准"><a href="#挑选标准" class="headerlink" title="挑选标准"></a>挑选标准</h2><p>跟踪误差<br>各大基金机构均可分析跟踪误差，要挑选跟踪误差小的指数基金</p>
+<p>成本<br>场内的成本相对比较低，场外的不同基金存在着一些差异，相同板块的基金，选低成本不选高</p>
+<p>规模<br>选大不选小，一是规模大的指数基金流动性比较好，不怕买不进，卖不出，也不会有清盘风险，二是规模越大的基金，操作受到的影响就越小，跟踪误差也会相对较小</p>
+<h2 id="主动性指数基金"><a href="#主动性指数基金" class="headerlink" title="主动性指数基金"></a>主动性指数基金</h2><h3 id="增强型基金"><a href="#增强型基金" class="headerlink" title="增强型基金"></a>增强型基金</h3><p>纯属生活物语，我是乐子，多多指教！<br><a href="mailto:&#x79;&#105;&#110;&#x67;&#108;&#101;&#49;&#57;&#x39;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#x79;&#105;&#110;&#x67;&#108;&#101;&#49;&#57;&#x39;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/09/28/2019-09-28-live-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-08-23-flutter-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/08/23/2019-08-23-flutter-Blog/" target="_blank">如何初始化本地项目到远程git仓库</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/08/23/2019-08-23-flutter-Blog/" class="archive-article-date">
+        <time datetime="2019-08-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <ol>
+<li><p>通过命令git init把这个文件夹变成Git可管理的仓库</p>
+<p> <img src="../../../../img/20190823/1566520004566.png" alt="1566520004566"></p>
+<p>   这时你会发现TEST里面多了个.git文件夹，它是Git用来跟踪和管理版本库的。如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见。</p>
+</li>
+<li><p>这时候你就可以把你的项目粘贴到这个本地Git仓库里面（粘贴后你可以通过git status来查看你当前的状态），然后通过git add把项目添加到仓库（或git add .把该目录下的所有文件添加到仓库，注意点是用空格隔开的）。在这个过程中你其实可以一直使用git status来查看你当前的状态。如果文件内有东西会出现红色的字，不是绿色，这不是错误。</p>
+<p> <img src="../../../../img/20190823/1566520107734.png" alt="1566520107734"></p>
+</li>
+<li><p>这里提示你虽然把项目粘贴过来了，但还没有add到Git仓库上，然后我们通过git add .把刚才复制过来的项目全部添加到仓库上。</p>
+<p><img src="../../../../img/20190823/1566520154035.png" alt="1566520154035"></p>
+</li>
+<li><p>用git commit -m “日志” 把项目提交到仓库。</p>
+<p><img src="../../../../img/20190823/1566520207207.png" alt="1566520207207"></p>
+</li>
+<li><p>在Github上创建好Git仓库之后我们就可以和本地仓库进行关联了，根据创建好的Git仓库页面的提示，可以在本地仓库的命令行输入：</p>
+<p><code> $git remote add origin https://gitee.com/ttx_android/dispatching_cars.git</code></p>
+<p> <img src="../../../../img/20190823/1566520397231.png" alt="1566520397231"></p>
+</li>
+<li><p>关联好之后我们就可以把本地库的所有内容推送到远程仓库（也就是Github）上了，通过：</p>
+<p><code>$ git push -u origin master -f</code></p>
+<p><img src="../../../../img/20190823/1566521471409.png" alt="1566521471409"></p>
+</li>
+<li><p>测试修改成功<br><img src="../../../../img/20190823/1566521577345.png" alt="1566521577345"></p>
+</li>
+</ol>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#x67;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;">&#121;&#105;&#x6e;&#x67;&#108;&#x65;&#x31;&#57;&#x39;&#49;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#x6f;&#109;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/08/23/2019-08-23-flutter-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-07-26-flutter-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/07/26/2019-07-26-flutter-Blog/" target="_blank">如何解决android.support.v4.content.FileProvider异常错误的问题？</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/07/26/2019-07-26-flutter-Blog/" class="archive-article-date">
+        <time datetime="2019-07-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>问题如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">Using hardware rendering with device Android SDK built for x86 64. If you get graphics artifacts, consider enabling software rendering with</span><br><span class="line">&quot;--enable-software-rendering&quot;.</span><br><span class="line">Launching lib&#x2F;main.dart on Android SDK built for x86 64 in debug mode...</span><br><span class="line">Initializing gradle...                                              1.5s</span><br><span class="line">Resolving dependencies...                                          17.3s</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:14: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">import android.support.v4.content.FileProvider;</span><br><span class="line">                                 ^</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:60: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">               Uri uri7 &#x3D; android.support.v4.content.FileProvider.getUriForFile(this,&quot;com.example.salesman_field.android7.fileprovider&quot;, apkFile);  </span><br><span class="line">                                                    ^</span><br><span class="line">2 ������</span><br><span class="line"></span><br><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">Execution failed for task &#39;:app:compileDebugJavaWithJavac&#39;.</span><br><span class="line">&gt; Compilation failed; see the compiler error output for details.</span><br><span class="line"></span><br><span class="line">* Try:</span><br><span class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.</span><br><span class="line"></span><br><span class="line">* Get more help at https:&#x2F;&#x2F;help.gradle.org</span><br><span class="line"></span><br><span class="line">BUILD FAILED in 46s</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;...</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;... Done                        46.8s</span><br><span class="line">*******************************************************************************************</span><br><span class="line">The Gradle failure may have been because of AndroidX incompatibilities in this Flutter app.</span><br><span class="line">See https:&#x2F;&#x2F;goo.gl&#x2F;CP92wY for more information on the problem and how to fix it.</span><br><span class="line">*******************************************************************************************</span><br><span class="line">Gradle task assembleDebug failed with exit code 1</span><br><span class="line">PS F:\dartSpace\flutter\Demo\salesman_field&gt; flutter run</span><br><span class="line">Using hardware rendering with device Android SDK built for x86 64. If you get graphics artifacts, consider enabling software rendering with</span><br><span class="line">&quot;--enable-software-rendering&quot;.</span><br><span class="line">Launching lib&#x2F;main.dart on Android SDK built for x86 64 in debug mode...</span><br><span class="line">Initializing gradle...                                              2.8s</span><br><span class="line">Resolving dependencies...                                          33.7s</span><br><span class="line">F:\dartSpace\flutter\Demo\salesman_field\android\app\src\main\java\com\example\salesman_field\MainActivity.java:61: ����: �����android.support.v4.</span><br><span class="line">content������</span><br><span class="line">               Uri uri7 &#x3D; android.support.v4.content.FileProvider.getUriForFile(this,&quot;com.example.salesman_field.android7.fileprovider&quot;, apkFile);  </span><br><span class="line">                                                    ^</span><br><span class="line">1 ������</span><br><span class="line"></span><br><span class="line">FAILURE: Build failed with an exception.</span><br><span class="line"></span><br><span class="line">* What went wrong:</span><br><span class="line">Execution failed for task &#39;:app:compileDebugJavaWithJavac&#39;.</span><br><span class="line">&gt; Compilation failed; see the compiler error output for details.</span><br><span class="line"></span><br><span class="line">* Try:</span><br><span class="line">Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.</span><br><span class="line"></span><br><span class="line">* Get more help at https:&#x2F;&#x2F;help.gradle.org</span><br><span class="line"></span><br><span class="line">BUILD FAILED in 26s</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;...</span><br><span class="line">Running Gradle task &#39;assembleDebug&#39;... Done                        27.4s</span><br><span class="line">*******************************************************************************************</span><br><span class="line">The Gradle failure may have been because of AndroidX incompatibilities in this Flutter app.</span><br><span class="line">See https:&#x2F;&#x2F;goo.gl&#x2F;CP92wY for more information on the problem and how to fix it.</span><br><span class="line">*******************************************************************************************</span><br><span class="line">Gradle task assembleDebug failed with exit code 1</span><br></pre></td></tr></table></figure>
+
+<p>为兼容24之上版本代码做了些改变报错，查阅资料</p>
+<pre><code>android.support.v4.content.FileProvider-&gt;androidx.core.content.FileProvider</code></pre>
+<p>问题解决</p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;">&#121;&#105;&#x6e;&#103;&#108;&#101;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#51;&#46;&#99;&#x6f;&#109;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">flutter</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/07/26/2019-07-26-flutter-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-07-13-git-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/07/13/2019-07-13-git-Blog/" target="_blank">Git出现代码冲突怎么办？</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/07/13/2019-07-13-git-Blog/" class="archive-article-date">
+        <time datetime="2019-07-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-13</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>我们在同步代码通常会先git pull，git pull时很频繁的遇到冲突的时候，如下面提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">    jiddpb-admin&#x2F;src&#x2F;main&#x2F;java&#x2F;io&#x2F;terminus&#x2F;jiddpb&#x2F;admin&#x2F;report&#x2F;JiddPBReports.java</span><br><span class="line">    jiddpb-bid&#x2F;src&#x2F;main&#x2F;java&#x2F;io&#x2F;terminus&#x2F;jiddpb&#x2F;bid&#x2F;service&#x2F;JiddpbReportServiceImpl.java</span><br><span class="line">Please commit your changes or stash them before you merge.</span><br></pre></td></tr></table></figure>
+
+<p>这个意思就是说服务器上的代码与本地修改内容有冲突，先提交你的改变或者储存起来你的改变.</p>
+<p>处理的方式很简单，跟提示走永远不愁，主要使用git 储存命令进行处理，步骤如下：</p>
+<p>##1. 先将本地修改使用git stash 命令储存起来<br>    git stash</p>
+<p>这样本地修改就被git 储存起来了，使用 git stash list 即可查到保存信息：</p>
+<p><img src="https://i.imgur.com/LbSqfQr.png"></p>
+<p>其中 stash@{0} 就是刚才储存的标记</p>
+<p>##2. pull服务器内容</p>
+<p>存储了本地变动就可以pull服务器代码了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<p>##3. 还原暂存代码<br>    git stash pop<br>系统提示一下信息<br><img src="https://i.imgur.com/F4QyRf0.png"><br>意思就是系统自动合并修改的内容，但是其中有冲突，需要解决其中的冲突。</p>
+<p>##4、解决文件中冲突的的部分</p>
+<p>打开冲突的文件，会看到类似如下的内容：</p>
+<p><img src="https://i.imgur.com/Zdl1etu.png"></p>
+<p>git冲突内容</p>
+<p>其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。<br>解决完成之后，就可以正常的提交了。</p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#121;&#105;&#110;&#103;&#x6c;&#x65;&#49;&#57;&#x39;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/07/13/2019-07-13-git-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2019-07-10-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2019/07/11/2019-07-10-work-Blog/" target="_blank">SAP调用外部接口</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2019/07/11/2019-07-10-work-Blog/" class="archive-article-date">
+        <time datetime="2019-07-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-11</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>###SAP调用外部接口遇到的坑</p>
+<p>开始</p>
+<ol>
+<li><p>SE80，创建web service proxy</p>
+<p>1）SE80，选择package，右击-&gt;create-&gt;Enterprise service</p>
+<ol start="2">
+<li>Object Type, 选择Service Consumer，继续<br>3）Select source，选择URL/HTTP Destination，继续<br>4）URL中输入网址，继续<br>5）分配package和前缀(随意)，完成<br>6）保存，激活</li>
+</ol>
+</li>
+<li><p>LPCONFIG，创建逻辑端口</p>
+<p>1）输入proxy class(第1步中生成的proxy name)和logical port(随意，通常同proxy class)，选中Default port<br>2）输入描述，选中message id 和 state management<br>3）调用参数：URL输入去掉?WSDL的地址<br>4）操作：右侧SOAP操作，输入xml文件中soapAction等号后的内容，包括引号</p>
+</li>
+<li><p>程序调用web service<br>例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">DATA:</span><br><span class="line">        lo_clientproxy      TYPE REF TO z_proxy. &quot;proxy class</span><br><span class="line">     DATA:</span><br><span class="line">        lo_input           TYPE z_input,      &quot;输入参数</span><br><span class="line">        lo_output          TYPE z_output.     &quot;输出参数</span><br><span class="line"></span><br><span class="line">  lo_request &#x3D;  request.</span><br><span class="line"></span><br><span class="line">  CREATE OBJECT lo_clientproxy.</span><br><span class="line">  TRY.</span><br><span class="line">      CALL METHOD lo_clientproxy-&gt;z_method &quot;web service函数</span><br><span class="line">        EXPORTING</span><br><span class="line">          to_input  &#x3D; lo_input</span><br><span class="line">        IMPORTING</span><br><span class="line">          to_output &#x3D; lo_output.</span><br><span class="line"></span><br><span class="line">- ***Write Out the Basic Information</span><br><span class="line">  CATCH cx_ai_system_fault INTO g_sys_exception.&quot;捕获错误</span><br><span class="line">    IF g_sys_exception IS NOT INITIAL.</span><br><span class="line">      WRITE: &#39;Error:Communication Error&#39;.</span><br><span class="line">    ENDIF.</span><br><span class="line">  CATCH cx_ai_application_fault INTO g_app_exception.</span><br><span class="line">    IF g_app_exception IS NOT INITIAL.</span><br><span class="line">      WRITE &#39;Error:Application Error&#39;.</span><br><span class="line">    ENDIF.</span><br><span class="line">  ENDTRY.</span><br></pre></td></tr></table></figure>
+<p>测试问题一：<br>第一步时，遇到问题HTTP 404问题，但是链接直接可以浏览器打开<br>解决方案：</p>
+</li>
+<li><p>将网址链接(JAVA发布的web service通常以?wsdl结尾)，另存到本地，保存为xml文件</p>
+</li>
+<li><p>修改xml文件，删除下面内容，删除后保存</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;wsdl:binding ……&gt;    ……  &lt;&#x2F;wsdl:binding&gt;</span><br><span class="line">&lt;wsdl:port …….&gt;    …….&lt;&#x2F;wsdl:port&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>SE80创建web service proxy时，就Select source，选择Local file，其他都一样<br>刚看一个链接里有介绍：<a target="_blank" rel="noopener" href="http://hi.baidu.com/tktik/item/fcaf0e53e26cbe3a32e0a951">http://hi.baidu.com/tktik/item/fcaf0e53e26cbe3a32e0a951</a></p>
+</li>
+</ol>
+<p>测试问题二：<br>连接总是不同，一直有cx_ai_system_fault异常<br>解决方案：<br>    将逻辑端口中的域名改为ip地址</p>
+<p>对于这个问题可以打印输出一把错误excption</p>
+<pre><code> CATCH CX_AI_SYSTEM_FAULT INTO exref.
+  zflag = exref-&gt;GET_TEXT( ).</code></pre>
+<p>值得注意的是，实现该功能，不需要创建RFC连接</p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#x69;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#x36;&#x33;&#46;&#99;&#x6f;&#109;">&#121;&#x69;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#49;&#x36;&#x33;&#46;&#99;&#x6f;&#109;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SAP</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2019/07/11/2019-07-10-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2018-06-25-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2018/06/25/2018-06-25-work-Blog/" target="_blank">服务器初始化java 环境记录</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2018/06/25/2018-06-25-work-Blog/" class="archive-article-date">
+        <time datetime="2018-06-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-25</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>###服务器初始化java 环境记录</p>
+<p>接到外包将一个简单的web项目部署到系统，也由于好久没做过基本配置了。现记录如下：<br>由于要部署的服务器不在外网公布，所以部署需要在teamViewer的配合下，安装个人版，设置为开机启动（你懂的。。。）</p>
+<ol>
+<li><p>下载Java绿色安装包，配置环境变量</p>
+<pre><code> 配置java_home
+ JAVA_HOME:&#39;E:\work_tool\java1.8.131\jdk1.8.0_131&#39;
+
+ 增加PATH
+ PATH+=&#39;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;&#39;
+
+ 配置CLASS_PATH
+ CLASS_PATH:&#39;.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar&#39;</code></pre>
+</li>
+<li><p>安装mysql，可视化工具（可选）</p>
+<pre><code> 默认就好，导入sql,source d:/xxx.sql;</code></pre>
+</li>
+<li><p>安装tomcat</p>
+<pre><code> 绿色版：
+ 解压将打出war包放到webapps，待加压完成之后修改配置文件sql账号密码；
+ 进入 tomcat bin目录 
+ 安装tomcat服务
+ service.bat install
+ 移除 tomcat服务
+ services.bat remove</code></pre>
+</li>
+</ol>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#x79;&#105;&#110;&#x67;&#x6c;&#x65;&#49;&#57;&#57;&#49;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2018/06/25/2018-06-25-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2018-05-15-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/ylbook/2018/05/15/2018-05-15-work-Blog/" target="_blank">技术交接记录</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/ylbook/2018/05/15/2018-05-15-work-Blog/" class="archive-article-date">
+        <time datetime="2018-05-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-15</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>##端点进行阳光采购前后台培训##</p>
+<p>测试:</p>
+<pre><code>tcg.jdsn.com.cn
+tacg.jdsn.com.cn</code></pre>
+<p>预发：</p>
+<pre><code>qcg.jdsn.com.cn
+qacg.jdsn.com.cn</code></pre>
+<p>正式：</p>
+<pre><code>cg.jdsn.com.cn
+acg.jdsn.com.cn</code></pre>
+<ol>
+<li>前台操作步骤</li>
+</ol>
+<ul>
+<li><blockquote>
+<p>components/ resource内</p>
+<p>front_config.yaml 表单注册关系；</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>back_config.yaml URL与注册关联真实路径（后台提供);</p>
+<p>view.hbs 可视化界面（主界面）</p>
+</blockquote>
+<blockquote>
+<p>*-setting 主要设计模板运用的内容界面（list遍历，数据打印）</p>
+</blockquote>
+<ol start="2">
+<li>git 工作流程</li>
+</ol>
+<p>-<br><img src="https://i.imgur.com/9ZPU5pY.png" alt="工作流程图"></p>
+<ol>
+<li><p>master-正式发布版</p>
+<p> 保留正式环境发布代码最新</p>
+</li>
+<li><p>devlop-开发测试版</p>
+<p> 供业务人员测试环境</p>
+</li>
+<li><p>release-预发版</p>
+<p> 从开发测试切出分支到release,预发测试，有改动，合并到devlop与master分支</p>
+</li>
+<li><p>feature-开发功能版（可有多个）</p>
+<p> 开发接到新功能，从dev分支down下然后再feature目录下创建新分支，开发完毕合并到devlop分支</p>
+</li>
+<li><p>hotfix-紧急开发任务</p>
+<p> 紧急开发任务从master 分支down 下主要代码，开发测试完毕合并到devlop 分支与master 分支保证代码最新</p>
+</li>
+<li><p>git 命令</p>
+</li>
+</ol>
+<p>-</p>
+<ul>
+<li><p>下载</p>
+<p>  git clone git地址</p>
+</li>
+<li><p>切换本地分支</p>
+<p>  git checkout -b develop origin/develop</p>
+</li>
+</ul>
+<p>待完善。。。。</p>
+<h2 id="4-代码级应用"><a href="#4-代码级应用" class="headerlink" title="4.代码级应用"></a>4.代码级应用</h2><p>ExtraMap.get(article.getExtra())==&gt;<br>    ##端点进行阳光采购前后台培训##</p>
+<pre><code>测试:
+
+    tcg.jdsn.com.cn
+    tacg.jdsn.com.cn
+
+预发：
+
+    qcg.jdsn.com.cn
+    qacg.jdsn.com.cn
+正式：
+
+    cg.jdsn.com.cn
+    acg.jdsn.com.cn
+
+1. 前台操作步骤
+- 
+
+&gt;components/ resource内
+&gt; 
+&gt; front_config.yaml 表单注册关系；
+
+&gt; back_config.yaml URL与注册关联真实路径（后台提供);
+&gt; 
+&gt; view.hbs 可视化界面（主界面）
+
+&gt; *-setting 主要设计模板运用的内容界面（list遍历，数据打印）
+
+2. git 工作流程
+-
+![工作流程图](https://i.imgur.com/9ZPU5pY.png)
+
+1. master-正式发布版
+
+    保留正式环境发布代码最新
+2. devlop-开发测试版
+
+    供业务人员测试环境
+3. release-预发版
+
+    从开发测试切出分支到release,预发测试，有改动，合并到devlop与master分支
+4. feature-开发功能版（可有多个）
+
+    开发接到新功能，从dev分支down下然后再feature目录下创建新分支，开发完毕合并到devlop分支
+
+5. hotfix-紧急开发任务
+
+    紧急开发任务从master 分支down 下主要代码，开发测试完毕合并到devlop 分支与master 分支保证代码最新
+
+3. git 命令
+-
+- 下载
+
+    git clone git地址
+
+- 切换本地分支
+
+    git checkout -b develop origin/develop
+
+待完善。。。。
+
+4.代码级应用
+-
+
+ExtraMap.get(article.getExtra())==&gt;</code></pre>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#x39;&#x39;&#49;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#x39;&#x39;&#49;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/ylbook/2018/05/15/2018-05-15-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/ylbook/page/2/">2</a><a class="extend next" rel="next" href="/ylbook/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -428,6 +1501,38 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SAP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">协作开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">理财</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
