@@ -8,12 +8,12 @@ subtitle: ''
 description: ''
 keywords:
 author: 闾丘齐心
-language: zh-CN
+language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://www.yingle.ml
+url: http://www.blog.rdtalk.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -126,3 +126,4 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
+
