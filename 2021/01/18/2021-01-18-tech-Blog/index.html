@@ -10,22 +10,23 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="用startup.bat启动编码解决：用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%“更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8”">
+  <meta name="description" content="### 用startup.bat启动 编码解决： 用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%  “更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8” 问题得到解决  ### 用service启动">
 <meta property="og:type" content="article">
 <meta property="og:title" content="service 启动 tomcat 后台保存以及查看 汉字编码异常解决">
 <meta property="og:url" content="http://www.yingle.ml/2021/01/18/2021-01-18-tech-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="用startup.bat启动编码解决：用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%“更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8”">
+<meta property="og:description" content="### 用startup.bat启动 编码解决： 用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%  “更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8” 问题得到解决  ### 用service启动">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/v2-614a4778aa9628bbb1195110d00ac8ab_r.png">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
 <meta property="article:published_time" content="2021-01-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-01-18T11:55:51.623Z">
+<meta property="article:modified_time" content="2021-01-18T12:21:27.489Z">
 <meta property="article:author" content="闾丘齐心">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="bug">
 <meta property="article:tag" content="运维">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
+<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/v2-614a4778aa9628bbb1195110d00ac8ab_r.png">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -308,7 +309,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">164字</span>
+      <span class="post-count">207字</span>
     </span>
   </span>
 
@@ -328,12 +329,31 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="用startup-bat启动"><a href="#用startup-bat启动" class="headerlink" title="用startup.bat启动"></a>用startup.bat启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+    <p><strong>### 用startup.bat启动</strong></p>
+<p>编码解决：</p>
+<p>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% </p>
+<p>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+<p>问题得到解决 </p>
+<p><strong>### 用service启动</strong></p>
 <a id="more"></a>
 
-<p>问题得到解决</p>
-<h3 id="用service启动"><a href="#用service启动" class="headerlink" title="用service启动"></a>用service启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”<br>删除service重新注册一遍</p>
-<p>未验证，猜测解决办法</p>
+
+<p>编码解决：</p>
+<ol>
+<li>修改catalina.bat</li>
+</ol>
+<p>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% </p>
+<p>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+<p>删除service重新注册一遍</p>
+<ol start="2">
+<li>修改 service.bat</li>
+</ol>
+<p>在service.bat中添加-Dfile.encoding=UTF-8如下图所示，记得分号隔开哦！</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/v2-614a4778aa9628bbb1195110d00ac8ab_r.png" alt="图片"></p>
+<p>重新运行运行service.bat install安装tomcat服务。</p>
+<ol start="3">
+<li>未验证，猜测解决办法</li>
+</ol>
 <p>另一个解决方案是直接修改注册表里的值，重启tomcat就好了，注册表路径：HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\Tomcat服务名\Parameters\Java</p>
 <p>找到Options</p>
 <p>增加-Dfile.encoding=UTF-8</p>

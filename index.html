@@ -302,7 +302,12 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="用startup-bat启动"><a href="#用startup-bat启动" class="headerlink" title="用startup.bat启动"></a>用startup.bat启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+    <p><strong>### 用startup.bat启动</strong></p>
+<p>编码解决：</p>
+<p>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% </p>
+<p>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+<p>问题得到解决 </p>
+<p><strong>### 用service启动</strong></p>
     
     <a class="article-more-a" href="/2021/01/18/2021-01-18-tech-Blog/#more">more >></a>
     
