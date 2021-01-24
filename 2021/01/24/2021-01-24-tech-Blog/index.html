@@ -6,17 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>Archives | ylBook</title>
+  <title>阿里服务器安装docker 给小程序 部署 springboot 项目 | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ylBook">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/archives/index.html">
+  <meta name="description" content="序 随着小程序的普及，大部分开发者都会有租个阿里服务器为小程序提供接口，恰巧我也正在开发一个股票、新债的小程序，但小程序一般都有两个需求（外网访问、https访问）,接口必须上云，所以才有今天的学习记录~ 一、在你的linux系统中安装docker curl -fsSL https:&#x2F;&#x2F;get.docker.com | bash -s docker --mirror Aliyun 剩下的就让机器自">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里服务器安装docker 给小程序 部署 springboot 项目">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/01/24/2021-01-24-tech-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
+<meta property="og:description" content="序 随着小程序的普及，大部分开发者都会有租个阿里服务器为小程序提供接口，恰巧我也正在开发一个股票、新债的小程序，但小程序一般都有两个需求（外网访问、https访问）,接口必须上云，所以才有今天的学习记录~ 一、在你的linux系统中安装docker curl -fsSL https:&#x2F;&#x2F;get.docker.com | bash -s docker --mirror Aliyun 剩下的就让机器自">
 <meta property="og:locale">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124111314359.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124112156219.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124113207329.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124114110871.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124115742768.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
+<meta property="article:published_time" content="2021-01-23T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-01-24T04:06:44.044Z">
 <meta property="article:author" content="闾丘齐心">
+<meta property="article:tag" content="理财">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="运维">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124111314359.png">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -266,41 +280,203 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-2021-01-24-tech-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      阿里服务器安装docker 给小程序 部署 springboot 项目
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/01/24/2021-01-24-tech-Blog/" class="archive-article-date">
         <time datetime="2021-01-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-24</time>
 </a>
 
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.1k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">4分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>序</p>
+<p>随着小程序的普及，大部分开发者都会有租个阿里服务器为小程序提供接口，恰巧我也正在开发一个股票、新债的小程序，但小程序一般都有两个需求（外网访问、https访问）,接口必须上云，所以才有今天的学习记录~</p>
+<p>一、在你的linux系统中安装docker</p>
+<p><code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</code></p>
+<p>剩下的就让机器自己运行就好了</p>
+<p>二、使用idea创建springboot项目，并打成jar包</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124111314359.png" alt="image-20210124111314359"></p>
+<p>这个大家都懂，就不再详细做介绍了</p>
+<a id="more"></a> 
+
+<p>三、服务器 新建一个docker 文件夹存储打包文件 并写一个Dockerfile文件，并命名为：Dockerfile，文件内容如下：</p>
+<p><code>mkdir -p /usr/local/docker/stock</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 基础镜像使用java</span><br><span class="line">FROM openjdk:8-jdk-alpine</span><br><span class="line"># VOLUME 指定了临时文件目录为&#x2F;tmp。</span><br><span class="line"># 其效果是在主机 &#x2F;var&#x2F;lib&#x2F;docker 目录下创建了一个临时文件，并链接到容器的&#x2F;tmp</span><br><span class="line">VOLUME &#x2F;tmp</span><br><span class="line"># 将jar包添加到容器中并更名为app.jar</span><br><span class="line">ADD stock-0.0.1-SNAPSHOT.jar app.jar</span><br><span class="line">#RUN bash -c &#39;touch &#x2F;app.jar&#39;</span><br><span class="line"># 运行jar</span><br><span class="line">ENV JAVA_OPTS&#x3D;&quot;&quot;</span><br><span class="line">ENTRYPOINT [ &quot;sh&quot;, &quot;-c&quot;, &quot;java $JAVA_OPTS -Djava.security.egd&#x3D;file:&#x2F;dev&#x2F;.&#x2F;urandom -jar -Duser.timezone&#x3D;GMT+08 &#x2F;app.jar&quot; ]</span><br></pre></td></tr></table></figure>
+
+<p>四、把Dockerfile文件和springboot项目打成的jar包，放入linux中的同一目录，在此目录下执行</p>
+<!--特别注意最后的 .-->
+
+<p><code>docker build -t $&#123;你要打成镜像的名称&#125; .</code></p>
+<p><code>例：docker build -t wx-stock .</code></p>
+<p>五、上述命令执行完毕之后，使用docker images命令，会看到有两个镜像，openjdk:8-jdk-alpine，wx-stock</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124112156219.png" alt="image-20210124112156219"></p>
+<p>至此已经将服务镜像安装完毕，接下来安装nginx镜像发布接口</p>
+<p>六、下载nginx镜像，执行命令，坐等完成，我服务器宽带比较小，坐等的时间比较长。。。</p>
+<p><code>docker pull nginx:latest</code>  </p>
+<p>七、创建容器：</p>
+<ol>
+<li><p>先创建文件夹：</p>
+<p><code>mkdir -p /data/nginx/conf.d/</code></p>
+</li>
+<li><p>,然后执行下述命令创建容器：</p>
+<p><code>docker run -d -p 80:80 -v /data/nginx/conf.d/:/etc/nginx/conf.d/ --name nginx_mirror nginx</code></p>
+<p><code>docker run -d -p 8080:8080 --name wx-stock_mirror wx-stock</code></p>
+</li>
+</ol>
+<p>容器创建完成之后，执行<code>docker ps</code>， 会发现两个运行着的容器</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124113207329.png" alt="image-20210124113207329"></p>
+<p>中间还有点插曲，后面补充—-！<!--docker logs nginx_mirror--></p>
+<p>八、配置nginx,并设置域名</p>
+<ol>
+<li>购买域名</li>
+</ol>
+<p>阿里云或者腾讯云买一个域名，并实名认证 <u>现在很方便直接上传身份证照片即可备案，不像原来还邮寄幕布，拍照上传</u>，等待审核通过，等待DNS解析正常。</p>
+<ol start="2">
+<li>配置DNS解析</li>
+</ol>
+<p>我在阿里云购买的域名，所以以阿里云做案例,进入阿里云域名解析，点击解析设置，点击解析设置中的新手引导，直接添加你的记录值，注意此记录值为你安装nginx服务器的外网ip，添加完成即可</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124114110871.png" alt="image-20210124114110871"></p>
+<p>九、配置nginx</p>
+<p>在/data/nginx/conf.d/文件夹中创建以  .conf 结尾的配置文件，文件内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">upstream wx-stock &#123;</span><br><span class="line">                           ip_hash;</span><br><span class="line">                           server 服务器外网IP地址:jar服务端口号;</span><br><span class="line">                   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">                        listen     80;</span><br><span class="line">                        server_name 申请的域名 例 www.baidu.com;</span><br><span class="line"></span><br><span class="line">                        location &#x2F; &#123;</span><br><span class="line">                                proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">                                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">                                proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">                                proxy_set_header Host $host;</span><br><span class="line">                                proxy_connect_timeout 3;</span><br><span class="line">                                proxy_send_timeout 30;</span><br><span class="line">                                proxy_read_timeout 30;</span><br><span class="line">                                index  index.html index.htm;</span><br><span class="line">                                proxy_pass http:&#x2F;&#x2F;wx-stock; &#x2F;&#x2F;必须与upstream 名称一致</span><br><span class="line">                                rewrite ^&#x2F;(.*)&#x2F;$ &#x2F;$1 last;</span><br><span class="line">                        &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>十、配置完成nginx之后，需要重启nginx_mirror容器</p>
+<p><code>docker restart nginx_mirror</code></p>
+<p>按常理学习部署到此其实已经结束，已经满足我开发调试，但是访问我的域名显示404，到这就介绍一下插曲吧：</p>
+<ol>
+<li>查看防火墙状态</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@yingle conf.d]# systemctl status firewalld.service</span><br><span class="line">● firewalld.service - firewalld - dynamic firewall daemon</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;firewalld.service; disabled; vendor preset: enabled)</span><br><span class="line">   Active: inactive (dead)</span><br><span class="line">     Docs: man:firewalld(1)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@yingle conf.d]#  firewall-cmd --state</span><br><span class="line">not running</span><br></pre></td></tr></table></figure>
+
+<p>排除了防火墙问题</p>
+<ol start="2">
+<li><p>查看设置阿里云安全策略</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124115742768.png" alt="image-20210124115742768"></p>
+</li>
+</ol>
+<p>按理说这两个设置完就都完事了，怎么还是404？我急了</p>
+<ol start="3">
+<li><p>过分自信，还是查看一下日志吧</p>
+<p><code>docker logs nginx_mirror</code></p>
+<p>原来.conf文件错写了一个字母。。。</p>
+</li>
+</ol>
+<p>看来服务器有问题还是得先看日志，不能盲目自信</p>
+<p>——————————————————————————————————分割线</p>
+<p>https访问  待更</p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<p> <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.png">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/24/2021-01-24-tech-Blog/" target="_blank">阿里服务器安装docker 给小程序 部署 springboot 项目</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          闾丘齐心
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://www.blog.rdtalk.cn/2021/01/24/2021-01-24-tech-Blog/" title="阿里服务器安装docker 给小程序 部署 springboot 项目" target="_blank">http://www.blog.rdtalk.cn/2021/01/24/2021-01-24-tech-Blog/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -320,474 +496,107 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/01/24/2021-01-24-tech-Blog/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/19/2021-01-19-tech-Blog/" class="archive-article-date">
-        <time datetime="2021-01-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-19</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/19/2021-01-19-tech-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">tomcat https访问部署</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/19/2021-01-19-tech-Blog/" target="_blank">tomcat https访问部署</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/18/2021-01-18-tech-Blog/" class="archive-article-date">
-        <time datetime="2021-01-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-18</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/18/2021-01-18-tech-Blog/" target="_blank">service 启动 tomcat 后台保存以及查看 汉字编码异常解决</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bug</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/12/10/2020-12-10-flutter-Blog/" class="archive-article-date">
-        <time datetime="2020-12-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-10</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/12/10/2020-12-10-flutter-Blog/" target="_blank">登录token认证以及密码加密</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/30/typora%E5%92%8Cpicgo%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-        <time datetime="2020-11-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-30</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/30/typora%E5%92%8Cpicgo%E4%BD%BF%E7%94%A8/" target="_blank">typora和picgo使用</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">生活杂谈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/04/01/2020-04-01-tech-Blog/" class="archive-article-date">
-        <time datetime="2020-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/04/01/2020-04-01-tech-Blog/" target="_blank">记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/29/2019-09-29-live-Blog/" class="archive-article-date">
-        <time datetime="2019-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/29/2019-09-29-live-Blog/" target="_blank">怎样让你的钱生钱？</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/09/28/2019-09-28-live-Blog/" class="archive-article-date">
-        <time datetime="2019-09-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/09/28/2019-09-28-live-Blog/" target="_blank">初识指数基金</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/23/2019-08-23-flutter-Blog/" class="archive-article-date">
-        <time datetime="2019-08-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/08/23/2019-08-23-flutter-Blog/" target="_blank">如何初始化本地项目到远程git仓库</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/07/26/2019-07-26-flutter-Blog/" class="archive-article-date">
-        <time datetime="2019-07-25T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2019/07/26/2019-07-26-flutter-Blog/" target="_blank">如何解决android.support.v4.content.FileProvider异常错误的问题？</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">协作开发</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">flutter</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -828,8 +637,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
