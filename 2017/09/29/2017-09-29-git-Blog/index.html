@@ -361,7 +361,7 @@
 <li>发布后，进行测试；</li>
 <li>测试通过后，通知客户重新登录使用。</li>
 </ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#x69;&#x6e;&#x67;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#121;&#x69;&#x6e;&#x67;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#110;&#x67;&#x6c;&#101;&#x31;&#57;&#57;&#49;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x79;&#105;&#110;&#x67;&#x6c;&#101;&#x31;&#57;&#57;&#49;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></p>
 
     
 
@@ -915,56 +915,6 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
-  
-    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
-<script type="text/javascript">
-  /**
-   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
-   */
-  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
-    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
-  //特定的模型json文件名称
-  var modelPathJson = {
-    "epsilon2_1": "Epsilon2.1",
-    "gf": "Gantzert_Felixander",
-    "haru/01": "haru01",
-    "haru/02": "haru02",
-    "nietzsche": "nietzche"
-  }
-
-  
-    var modelName = "z16";
-  
-
-  var modelJsonPath = "";
-  if (modelPathJson[modelName]) {
-    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
-      ".model.json";
-  } else {
-    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
-  }
-  L2Dwidget.init({
-    model: {
-      jsonPath: modelJsonPath
-    },
-    display: {
-       position: "right", 
-       width: 145, 
-       height: 315, 
-       hOffset: 50, 
-      
-    },
-    mobile: {
-       show: false, 
-       scale: 0.6 
-    },
-    react: {
-       opacity: 0.8 
-    }
-  })
-
-</script>
-
   
   
 </body>
