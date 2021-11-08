@@ -47,7 +47,26 @@
   
   
 
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
 
+</script>
+
+
+
+  
+    <script src="/lib/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
   
 
 </head>
@@ -59,11 +78,11 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/head.jpg" class="js-avatar">
+			<img src="/img/head.png" class="js-avatar">
 		</a>
 		<hgroup>
 			<h1 class="header-author"><a href="/">闾丘齐心</a></h1>
@@ -75,7 +94,7 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/%E7%94%9F%E6%B4%BB/" target="_blank">生活杂谈</a></li>
 			
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
 			
@@ -100,23 +119,43 @@
 			<div class="social">
 				
 					
-						<a class="github" href="#" 
+						<a class="github" href="https://github.com/yingle1991" 
 												title="GitHub" target="_blank"><i class="icon-github"></i></a>
 					
 				
 					
-						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
-					
-				
-					
-						<a class="gitee" href="#" 
+						<a class="gitee" href="https://gitee.com/yingle1991" 
 												title="码云" target="_blank"><i class="icon-gitee"></i></a>
 					
 				
 					
 						<a class="jianshu" href="#" 
 												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+					
+				
+					
+						<a class="csdn" href="https://blog.csdn.net/xiaimosheng" 
+												title="CSDN" target="_blank"><i class="icon-csdn"></i></a>
+					
+				
+					
+						<a class="zhihu" href="https://www.zhihu.com/people/zhang-ying-le-91" 
+												title="知乎" target="_blank"><i class="icon-zhihu"></i></a>
+					
+				
+					
+						<a class="weixin" href="/img/weixin_.png" 
+												title="微信" target="_blank"><i class="icon-weixin"></i></a>
+					
+				
+					
+						<a class="mail" href="/yingle1991@163.com" 
+												title="邮件联系" target="_blank"><i class="icon-mail"></i></a>
+					
+				
+					
+						<a class="google" href="/yingle1991@gmail.com" 
+												title="Google" target="_blank"><i class="icon-google"></i></a>
 					
 				
 			</div>
@@ -130,7 +169,7 @@
       
       
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
+        href="https://github.com/yingle1991" target="_blank">
         <img src="/img/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
       
@@ -144,7 +183,7 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 				<a href="/">
-					<img src="/img/head.jpg" class="js-avatar">
+					<img src="/img/head.png" class="js-avatar">
 				</a>
 			</div>
 			<hgroup>
@@ -166,22 +205,42 @@
 					
 						
 						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
-						
-					
-						
-						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
+							href="https://github.com/yingle1991" title="GitHub"><i class="icon-github"></i></a>
 						
 					
 						
 						<a class="gitee" target="_blank" 
-							href="#" title="码云"><i class="icon-gitee"></i></a>
+							href="https://gitee.com/yingle1991" title="码云"><i class="icon-gitee"></i></a>
 						
 					
 						
 						<a class="jianshu" target="_blank" 
 							href="#" title="简书"><i class="icon-jianshu"></i></a>
+						
+					
+						
+						<a class="csdn" target="_blank" 
+							href="https://blog.csdn.net/xiaimosheng" title="CSDN"><i class="icon-csdn"></i></a>
+						
+					
+						
+						<a class="zhihu" target="_blank" 
+							href="https://www.zhihu.com/people/zhang-ying-le-91" title="知乎"><i class="icon-zhihu"></i></a>
+						
+					
+						
+						<a class="weixin" target="_blank" 
+							href="/img/weixin_.png" title="微信"><i class="icon-weixin"></i></a>
+						
+					
+						
+						<a class="mail" target="_blank" 
+							href="/yingle1991@163.com" title="邮件联系"><i class="icon-mail"></i></a>
+						
+					
+						
+						<a class="google" target="_blank" 
+							href="/yingle1991@gmail.com" title="Google"><i class="icon-google"></i></a>
 						
 					
 				</div>
@@ -193,7 +252,7 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E7%94%9F%E6%B4%BB/">生活杂谈</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
@@ -245,18 +304,6 @@
     
     <h4 id="序"><a href="#序" class="headerlink" title="序"></a>序</h4><p>随着企业安全意识越来越强烈，每个企业都会进行内网防护，但是我们又有在家办公的需要、作为运维的我们出去度假，公司项目又有新情况，接下来怎么办呢？</p>
 <p>我常出差：链接系统远程桌面，在外模拟家中电脑，提取资料简单快捷。</p>
-<h5 id="一、在你的linux系统中开启sshd"><a href="#一、在你的linux系统中开启sshd" class="headerlink" title="一、在你的linux系统中开启sshd"></a>一、在你的linux系统中开启sshd</h5><ul>
-<li>systemctl status sshd    查看服务状态</li>
-<li>systemctl start sshd      打开服务</li>
-<li>systemctl stop sshd      关闭服务</li>
-<li>systemctl restart sshd      重起服务</li>
-<li>systemctl enable sshd      设定开机启动</li>
-<li>systemctl disable sshd     设定开机不启动</li>
-<li>systemctl reload sshd      重新加载配置文件</li>
-<li>systemctl  list-units      列出已开启服务当前状态</li>
-</ul>
-<p>需要在你家里的linux 系统开启sshd 服务便于我们远程连接</p>
-<h5 id="二、下载翻墙穿透工具"><a href="#二、下载翻墙穿透工具" class="headerlink" title="二、下载翻墙穿透工具"></a>二、下载翻墙穿透工具</h5>
     
     <a class="article-more-a" href="/2021/02/24/2021-02-24-work-Blog/#more">more >></a>
     
@@ -353,9 +400,6 @@
 <p>一、在你的linux系统中安装docker</p>
 <p><code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</code></p>
 <p>剩下的就让机器自己运行就好了</p>
-<p>二、使用idea创建springboot项目，并打成jar包</p>
-<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210124111314359.png" alt="image-20210124111314359"></p>
-<p>这个大家都懂，就不再详细做介绍了</p>
     
     <a class="article-more-a" href="/2021/01/24/2021-01-24-tech-Blog/#more">more >></a>
     
@@ -1053,7 +1097,7 @@
 <p>成本<br>场内的成本相对比较低，场外的不同基金存在着一些差异，相同板块的基金，选低成本不选高</p>
 <p>规模<br>选大不选小，一是规模大的指数基金流动性比较好，不怕买不进，卖不出，也不会有清盘风险，二是规模越大的基金，操作受到的影响就越小，跟踪误差也会相对较小</p>
 <h2 id="主动性指数基金"><a href="#主动性指数基金" class="headerlink" title="主动性指数基金"></a>主动性指数基金</h2><h3 id="增强型基金"><a href="#增强型基金" class="headerlink" title="增强型基金"></a>增强型基金</h3><p> <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
-<p>纯属生活物语，我是乐子，多多指教！<br><a href="mailto:&#121;&#105;&#x6e;&#x67;&#x6c;&#x65;&#x31;&#x39;&#x39;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#105;&#x6e;&#x67;&#x6c;&#x65;&#x31;&#x39;&#x39;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>纯属生活物语，我是乐子，多多指教！<br><a href="mailto:&#x79;&#x69;&#110;&#103;&#108;&#101;&#49;&#x39;&#57;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;">&#x79;&#x69;&#110;&#103;&#108;&#101;&#49;&#x39;&#57;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;</a></p>
 
     
 
@@ -1168,7 +1212,7 @@
 <li><p>测试修改成功<br><img src="../../../../img/20190823/1566521577345.png" alt="1566521577345"></p>
 </li>
 </ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#121;&#x69;&#x6e;&#103;&#108;&#101;&#49;&#57;&#57;&#x31;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#109;">&#121;&#x69;&#x6e;&#103;&#108;&#101;&#49;&#57;&#57;&#x31;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#x6e;&#103;&#108;&#x65;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#109;">&#x79;&#105;&#x6e;&#103;&#108;&#x65;&#49;&#57;&#x39;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#109;</a></p>
 
     
 
@@ -1235,7 +1279,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1463,7 +1507,7 @@
           
             <li class="search-li">
               <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" 
-                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、APP开发、Linux笔记、ElasticSearch、ELK日志分析">
                 
                   <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
                 
@@ -1472,7 +1516,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" 
+              <a href="https://github.com/yingle1991" target="_blank" 
                 class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -1482,7 +1526,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" 
+              <a href="https://gitee.com/yingle1991" target="_blank" 
                 class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -1502,7 +1546,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" 
+              <a href="https://blog.csdn.net/xiaimosheng" target="_blank" 
                 class="search-title" >
                 
                   <i class="icon-link icon"></i>
@@ -1520,7 +1564,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、APP开发、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:183767076<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
   	  	
     	</section>
     
@@ -1607,6 +1651,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "z16";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>
