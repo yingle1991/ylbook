@@ -6,21 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>忆开发中的坏习惯 | ylBook</title>
+  <title>ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="昨天晚上项目更新上线，以我这大大咧咧的性格当然是比较繁琐、麻烦了，先总结出错的地方 以记录改正。  项目开发周期无非涉及日常开发（前、后台部分）、数据库表结构、视图、函数的修改，测试环境部署branches -&gt;trunk 现在整理一下每个过程需要注意的地方 日常开发部分：  每天第一件事先从svn down 下最新代码包 确定连接开发库，忌讳连接本地库以及正式库 确定与项目组成员修改不同功">
-<meta property="og:type" content="article">
-<meta property="og:title" content="忆开发中的坏习惯">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/2017/09/29/2017-09-29-git-Blog/index.html">
+  <meta name="description" content="404">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ylBook">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/404tencent.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="昨天晚上项目更新上线，以我这大大咧咧的性格当然是比较繁琐、麻烦了，先总结出错的地方 以记录改正。  项目开发周期无非涉及日常开发（前、后台部分）、数据库表结构、视图、函数的修改，测试环境部署branches -&gt;trunk 现在整理一下每个过程需要注意的地方 日常开发部分：  每天第一件事先从svn down 下最新代码包 确定连接开发库，忌讳连接本地库以及正式库 确定与项目组成员修改不同功">
+<meta property="og:description" content="404">
 <meta property="og:locale">
-<meta property="article:published_time" content="2017-09-28T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-07T14:17:36.817Z">
+<meta property="article:published_time" content="2021-11-08T06:19:02.481Z">
+<meta property="article:modified_time" content="2021-11-08T06:19:02.480Z">
 <meta property="article:author" content="闾丘齐心">
-<meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
@@ -212,98 +211,23 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-09-29-git-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-  
-  
-    <h1 class="article-title" itemprop="name">
-      忆开发中的坏习惯
-    </h1>
-  
-
-
-  
-  
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/2017/09/29/2017-09-29-git-Blog/" class="archive-article-date">
-        <time datetime="2017-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
-</a>
-
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">866字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">3分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
   <div class="article-entry" itemprop="articleBody">
     
-    <p>昨天晚上项目更新上线，以我这大大咧咧的性格当然是比较繁琐、麻烦了，先总结出错的地方 以记录改正。</p>
-<hr>
-<p>项目开发周期无非涉及日常开发（前、后台部分）、数据库表结构、视图、函数的修改，测试环境部署branches -&gt;trunk 现在整理一下每个过程需要注意的地方</p>
-<p>日常开发部分：</p>
-<ol>
-<li>每天第一件事先从svn down 下最新代码包</li>
-<li>确定连接开发库，忌讳连接本地库以及正式库</li>
-<li>确定与项目组成员修改不同功能模块尤其前后台分离的项目</li>
-<li>记录修改了哪些前台模块 以备正式发布导出</li>
-</ol>
-<p>数据库表结构、视图、函数的修改</p>
-<ol>
-<li>表结构、视图的新建修改一定要记录！记录！记录（我吃了很大亏）</li>
-<li>对于函数尽可能的记录函数干嘛的，不要重复建立，尽可能的复用：这里我要多说一句统计函数尽可能独立建立，缩减查询列，对于大数据是很消耗资源的</li>
-<li>避免使用*</li>
-</ol>
-<p>测试环境部署branches</p>
-<ol>
-<li>前后台一定同步更新，改动少可以class 部署</li>
-<li>war 包部署，注意上传文件的保护</li>
-</ol>
-<p>发布准备</p>
-<ol>
-<li>每个程序员分别导出自己修改的几个wb模块；</li>
-<li>每个程序员记住自己的数据库修改内容，包括：修改的表字段、表、视图、函数、存储过程、序列、索引等；</li>
-<li>每个程序员记住自己的项目内容的修改，包括：可配置的键值内容的修改、新增功能授权给哪些人、工作流的配置修改等；</li>
-<li>如果涉及到批量更新数据，需要写好sql，在测试环境中测试通过。</li>
-</ol>
-<p>正式环境操作</p>
-<ol>
-<li>备份<br>①备份正式数据库<br>②导出现有的所有wb模块</li>
-<li>将svn的“开发分支”合并到“trunk主分支”上，注意相关数据库地址、微信地址等需要是正式地址；导出war包，或者导出编译后的增量变化的内容；</li>
-<li>发布之前，预估一下发布的时间，通知客户停止使用；</li>
-<li>进行内容发布<br>（1）java程序（如果服务器有多台，需要多台上都进行如下操作）<br>①备份正式服务器上tomcat下的项目目录；<br>②将增量变化的内容复制到测试服务器上tomcat下的项目目录中，覆盖已有的内容，重启tomcat（如果只修改jsp不需要重启）<br>如果导出的是war包，可将war包放到与项目目录同级的目录下，删除原有的项目目录【注意附件等内容】<br>（2）数据库内容<br>按照事前的整理，进行数据库内容的修改，包括批量更新数据<br>（3）wb模块<br>①按照事前的整理，进行多个wb模块的导入<br>②登录集成开发环境，进行模块更新（如果服务器有多台，需要多台上都进行如下操作）<br>（4）项目内容的修改<br>按照事前的整理，进行项目内容的修改</li>
-<li>发布后，进行测试；</li>
-<li>测试通过后，通知客户重新登录使用。</li>
-</ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#57;&#x39;&#x31;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#x69;&#x6e;&#x67;&#108;&#x65;&#49;&#57;&#x39;&#x31;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+    <html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>404</title>
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="http://yoursite.com/yourPage.html" homePageName="回到我的主页"></script>
+</head>
 
+<body translate="no">
+ 
+
+</body>
+</html>
     
 
     
@@ -349,7 +273,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://www.blog.rdtalk.cn/2017/09/29/2017-09-29-git-Blog/" title="忆开发中的坏习惯" target="_blank">http://www.blog.rdtalk.cn/2017/09/29/2017-09-29-git-Blog/</a>
+          <a href="http://www.blog.rdtalk.cn/404tencent.html" title="" target="_blank">http://www.blog.rdtalk.cn/404tencent.html</a>
         </li>
         
         <li>
@@ -366,17 +290,6 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
 
     
@@ -427,7 +340,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2017/09/29/2017-09-29-git-Blog/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/404tencent.html" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -439,25 +352,6 @@
   </div>
 </article>
 
-
-<nav id="article-nav">
-  
-    <a href="/2018/04/01/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/11/11/2016-11-11-git-Blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">用git与Jekyll 搭建面向世界的博客</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
 
 
 <aside class="wrap-side-operation">
@@ -527,7 +421,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
