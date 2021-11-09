@@ -19,7 +19,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="http://www.blog.rdtalk.cn/img/passme.png">
 <meta property="article:published_time" content="2020-12-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-07T14:17:36.819Z">
+<meta property="article:modified_time" content="2021-11-08T12:52:28.774Z">
 <meta property="article:author" content="闾丘齐心">
 <meta property="article:tag" content="生活">
 <meta property="article:tag" content="技术">
@@ -328,7 +328,7 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h4 id="1-登录认证"><a href="#1-登录认证" class="headerlink" title="1.登录认证"></a>1.登录认证</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">md5String 加密对象=时间戳</span><br><span class="line">md5Key md5加密浴 =APITest</span><br><span class="line">    </span><br><span class="line">String enstr=Encrypter.encrypt(password,Encrypter.generateSign(md5String,md5Key));<span class="comment">//传递所有密码以此方式加密传递</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">String denstr=Encrypter.decrypt(enstr,Encrypter.generateSign(md5String,md5Key));<span class="comment">//后台所有密码以此方式解密</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<a id="more"></a>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line"></span><br><span class="line">op&#x3D;&gt;operation: 对用户密码进行解密操作</span><br><span class="line"></span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line"></span><br><span class="line">sub1&#x3D;&gt;subroutine: 登录验证</span><br><span class="line"></span><br><span class="line">io&#x3D;&gt;inputoutput: 返回登录用户(增加token）8小时有效</span><br><span class="line"></span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line"></span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line"></span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;cond</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 

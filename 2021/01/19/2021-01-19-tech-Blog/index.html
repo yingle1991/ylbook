@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="自签名证书 利用java命令生成自定义签名证书 123keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; &#x2F;&#x2F;可执行后输入-storepass 123456         tomcat 服务器修改server">
+  <meta name="description" content="自签名证书 利用java命令生成自定义签名证书 123keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; &#x2F;&#x2F;可执行后输入-storepass 123456">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tomcat https访问部署">
 <meta property="og:url" content="http://www.blog.rdtalk.cn/2021/01/19/2021-01-19-tech-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="自签名证书 利用java命令生成自定义签名证书 123keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; &#x2F;&#x2F;可执行后输入-storepass 123456         tomcat 服务器修改server">
+<meta property="og:description" content="自签名证书 利用java命令生成自定义签名证书 123keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; &#x2F;&#x2F;可执行后输入-storepass 123456">
 <meta property="og:locale">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210119220222540.png">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210120142402734.png">
@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210120090953789.png">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
 <meta property="article:published_time" content="2021-01-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-07T14:17:36.819Z">
+<meta property="article:modified_time" content="2021-11-08T12:52:11.644Z">
 <meta property="article:author" content="闾丘齐心">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="运维">
@@ -335,7 +335,7 @@
     <h6 id="自签名证书"><a href="#自签名证书" class="headerlink" title="自签名证书"></a>自签名证书</h6><ol>
 <li><p>利用java命令生成自定义签名证书</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; </span><br><span class="line">&#x2F;&#x2F;可执行后输入</span><br><span class="line">-storepass 123456</span><br></pre></td></tr></table></figure>
-
+<a id="more"></a>
 
 
 </li>
@@ -345,8 +345,6 @@
 <ol start="2">
 <li>tomcat 服务器修改server.xml</li>
 </ol>
-<a id="more"></a>
-
 <p>   将8443端口注释放出来 (默认是8443 但是https请求需要带端口号，改成443端口便不用带端口号访问)</p>
    <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/image-20210120142402734.png" alt="image-20210120142402734" style="zoom:80%;" />
 

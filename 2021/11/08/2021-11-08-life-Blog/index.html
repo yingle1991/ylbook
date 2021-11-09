@@ -6,25 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆） | ylBook</title>
+  <title>我是程序员，邀请你和我一起帮助宝贝回家。 | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="用startup.bat启动编码解决：用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%“更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8”问题得到解决">
+  <meta name="description" content="做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～ 今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。 改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/2020/04/01/2020-04-01-tech-Blog/index.html">
+<meta property="og:title" content="我是程序员，邀请你和我一起帮助宝贝回家。">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="用startup.bat启动编码解决：用编辑器打开catalina.bat文件找到set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS%“更改为 set “JAVA_OPTS&#x3D;%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding&#x3D;UTF-8”问题得到解决">
+<meta property="og:description" content="做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～ 今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。 改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。">
 <meta property="og:locale">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/640-20211108220905849">
+<meta property="og:image" content="https://files.mdnice.com/user/22056/de84191b-14c3-47e5-8fdb-bd8faac57df3.png">
+<meta property="og:image" content="https://img.soogif.com/RNFWjMTwYmgAqDbyRF5J1PJ3dhB16La6.gif?scope=mdnice">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
-<meta property="article:published_time" content="2020-03-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-08T12:54:34.039Z">
+<meta property="article:published_time" content="2021-11-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-08T15:05:26.225Z">
 <meta property="article:author" content="闾丘齐心">
 <meta property="article:tag" content="生活">
 <meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
+<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/640-20211108220905849">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -274,14 +277,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2020-04-01-tech-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021-11-08-life-Blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）
+      我是程序员，邀请你和我一起帮助宝贝回家。
     </h1>
   
 
@@ -293,8 +296,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/04/01/2020-04-01-tech-Blog/" class="archive-article-date">
-        <time datetime="2020-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+<a href="/2021/11/08/2021-11-08-life-Blog/" class="archive-article-date">
+        <time datetime="2021-11-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-08</time>
 </a>
 
   
@@ -307,7 +310,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">163字</span>
+      <span class="post-count">698字</span>
     </span>
   </span>
 
@@ -316,7 +319,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -327,14 +330,36 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="用startup-bat启动"><a href="#用startup-bat启动" class="headerlink" title="用startup.bat启动"></a>用startup.bat启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”<br>问题得到解决</p>
-<a id="more"></a>
-<h3 id="用service启动"><a href="#用service启动" class="headerlink" title="用service启动"></a>用service启动</h3><p>编码解决：<br>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS%<br>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”<br>删除service重新注册一遍<br>未验证，猜测解决办法</p>
-<p>另一个解决方案是直接修改注册表里的值，重启tomcat就好了，注册表路径：HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\Tomcat服务名\Parameters\Java</p>
-<p>找到Options</p>
-<p>增加-Dfile.encoding=UTF-8</p>
-<p>技术分享，我是认真的！我是乐子，多多指教！</p>
-<p> <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+    <p>做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～</p>
+<p>今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。</p>
+<p>改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。</p>
+<a id="more"></a> 
+
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/640-20211108220905849" alt="图片"></p>
+<p>接入方式非常简单，就只需要加入一行代码到你的 404 页面即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">    src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; </span><br><span class="line">    charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>同时，在404页面，默认是返回腾讯网，但是这个超链接可以定制化，修改homePageUrl和homePageName两个参数即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">    src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; </span><br><span class="line">    charset&#x3D;&quot;utf-8&quot; </span><br><span class="line">    homePageUrl&#x3D;&quot;http:&#x2F;&#x2F;yoursite.com&#x2F;yourPage.html&quot; homePageName&#x3D;&quot;回到我的主页&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样的 404 页面被人触发，然后偶然瞟一眼的概率大吗？</p>
+<p>是的，不大，甚至可以说非常低。</p>
+<p>但是，非常低，也属于有一定的概率，哪怕是一万个人中只有一个人看了一眼呢？这一眼，也许就能带来一点点的希望。</p>
+<h3 id="然而我对接完的界面是这样的："><a href="#然而我对接完的界面是这样的：" class="headerlink" title="然而我对接完的界面是这样的："></a>然而我对接完的界面是这样的：</h3><p><img src="https://files.mdnice.com/user/22056/de84191b-14c3-47e5-8fdb-bd8faac57df3.png"></p>
+<p><img src="https://img.soogif.com/RNFWjMTwYmgAqDbyRF5J1PJ3dhB16La6.gif?scope=mdnice"></p>
+<p>既然想做就得做完整，继续百度。。。</p>
+<p>仅需要在404页面加几行代码即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;https:&#x2F;&#x2F;api.isoyu.com&#x2F;gy&#x2F;&quot; frameborder&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; width&#x3D;&quot;300&quot; height&#x3D;&quot;400&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p>完成</p>
+<p>我国失踪儿童找回的概率有多大，我不知道，但是我知道的是概率肯定不是 100%。哪怕它是 99.99% 呢，谁愿意去承担那令人心碎的 0.01%？<br>我看到过太多太多令人心碎的、抱头痛哭的认亲场面了，这背后大多都是横跨几年，十几年，甚至几十年时间的相认，唏嘘不已。</p>
+<p>这个项目的出发点和落地都非常好，我也知道贡献的力量肯定是非常有限，但是哪怕是一丝丝有限的力量也好呀。</p>
+<p>有希望总是好的。</p>
+<p>小的时候我们都学过：勿以善小而不为，勿以恶小而为之。</p>
+<p>让科技更有温度，何乐而不为？因此 我呼吁用一行代码帮助宝贝回家～</p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<pre><code>                                                - EOF -</code></pre>
+<p>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
 
     
 
@@ -381,7 +406,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://www.blog.rdtalk.cn/2020/04/01/2020-04-01-tech-Blog/" title="记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）" target="_blank">http://www.blog.rdtalk.cn/2020/04/01/2020-04-01-tech-Blog/</a>
+          <a href="http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/" title="我是程序员，邀请你和我一起帮助宝贝回家。" target="_blank">http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/</a>
         </li>
         
         <li>
@@ -463,7 +488,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2020/04/01/2020-04-01-tech-Blog/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -478,18 +503,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/11/30/typora%E5%92%8Cpicgo%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          typora和picgo使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/29/2019-09-29-live-Blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">怎样让你的钱生钱？</div>
+    <a href="/2021/02/24/2021-02-24-work-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我是程序员，抱上笔记本，来一场说走就走的旅行，知你如知己，正如写到这，想到了你此刻的目光。</div>
       <i class="icon-circle-right"></i>
     </a>
   
