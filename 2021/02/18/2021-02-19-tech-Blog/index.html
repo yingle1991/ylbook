@@ -6,25 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>怎样让你的钱生钱？ | ylBook</title>
+  <title>mysql时间差查询常规操作 | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="基金定投 基金定投就是基金定期投资，常见的有周定期，两周定期，月定期，周定期周期比较短，本人不建议，两周定投与月定投，大数据显示差异不大，我们可以依个人情况进行规划投资。">
+  <meta name="description" content="今天 1select * from 表名 where to_days(时间字段名) &#x3D; to_days(now()); 昨天 1SELECT * FROM 表名 WHERE TO_DAYS( NOW( ) ) - TO_DAYS( 时间字段名) &lt;&#x3D; 1 近7天">
 <meta property="og:type" content="article">
-<meta property="og:title" content="怎样让你的钱生钱？">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/2019/09/29/2019-09-29-live-Blog/index.html">
+<meta property="og:title" content="mysql时间差查询常规操作">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/02/18/2021-02-19-tech-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="基金定投 基金定投就是基金定期投资，常见的有周定期，两周定期，月定期，周定期周期比较短，本人不建议，两周定投与月定投，大数据显示差异不大，我们可以依个人情况进行规划投资。">
+<meta property="og:description" content="今天 1select * from 表名 where to_days(时间字段名) &#x3D; to_days(now()); 昨天 1SELECT * FROM 表名 WHERE TO_DAYS( NOW( ) ) - TO_DAYS( 时间字段名) &lt;&#x3D; 1 近7天">
 <meta property="og:locale">
+<meta property="og:image" content="evernotecid://A70C830B-FADB-4C9E-AFA8-453E4049A178/appyinxiangcom/26577542/ENResource/p207">
+<meta property="og:image" content="evernotecid://A70C830B-FADB-4C9E-AFA8-453E4049A178/appyinxiangcom/26577542/ENResource/p207">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
-<meta property="article:published_time" content="2019-09-28T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-07T14:17:36.818Z">
+<meta property="article:published_time" content="2021-02-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-11T06:39:46.982Z">
 <meta property="article:author" content="闾丘齐心">
-<meta property="article:tag" content="理财">
-<meta property="article:tag" content="生活">
+<meta property="article:tag" content="运维">
+<meta property="article:tag" content="记录">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
+<meta name="twitter:image" content="evernotecid://A70C830B-FADB-4C9E-AFA8-453E4049A178/appyinxiangcom/26577542/ENResource/p207">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -274,14 +277,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2019-09-29-live-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021-02-19-tech-Blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      怎样让你的钱生钱？
+      mysql时间差查询常规操作
     </h1>
   
 
@@ -293,8 +296,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/09/29/2019-09-29-live-Blog/" class="archive-article-date">
-        <time datetime="2019-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
+<a href="/2021/02/18/2021-02-19-tech-Blog/" class="archive-article-date">
+        <time datetime="2021-02-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-18</time>
 </a>
 
   
@@ -307,7 +310,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">509字</span>
+      <span class="post-count">454字</span>
     </span>
   </span>
 
@@ -316,7 +319,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -327,13 +330,36 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>基金定投</p>
-<p>基金定投就是基金定期投资，常见的有周定期，两周定期，月定期，周定期周期比较短，本人不建议，两周定投与月定投，大数据显示差异不大，我们可以依个人情况进行规划投资。</p>
-<a id="more"></a>
-<p>定投虽然可以有效避开熊市的干扰，减少熊市的损失，但定投并不是永远最好的，在经济萧条，股市不确定性的时候定投是最好的选择，但是假如现在股市大盘已经跌到2600点，明显点位很低，就不再适合在做定投，可以每两周一次分三个月将可用资产加到仓位，以应对股市反弹带来的收益。</p>
-<p>大部分我们普通投资者，理解的定投就是定期投资，而不去进行后期管理，这就造成，有的人年收益50%-70%，而你的收益只在1.9%。</p>
-<p>基金投资并不只是选中一个板块，无限期的定时投资，产品需要根据经济状况以及政策支持进行替换，资产大比例，要根据后期实际情况大比例调整，比如今年，九月份，军工产业比较强势，可以加大军工产业的投资比例，还有最关键的管理就是止盈，大家都知道“不要追涨杀跌，而应该低买高卖”，要有满足感，在未来市场预测不怎么乐观，以及现有盈利已经达到自己的“目标标准”，可以适当的减仓，单产品盈利20%-30%减仓五分之一，单产品盈利40% 减仓四分之一，当单产品盈利达到50%，就应该注意了，这时候已经很危险了，我们应该减仓1/2以上，入兜为安，以免市场波动造成我们更大的损失，也不影响我们得到更多的盈利。</p>
-<p>纯属生活物语，我是乐子，多多指教！</p>
+    <p>今天</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from 表名 where to_days(时间字段名) &#x3D; to_days(now());</span><br></pre></td></tr></table></figure>
+<p>昨天</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 WHERE TO_DAYS( NOW( ) ) - TO_DAYS( 时间字段名) &lt;&#x3D; 1</span><br></pre></td></tr></table></figure>
+<p>近7天</p>
+<a id="more"></a> 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 where DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;&#x3D; date(时间字段名)</span><br></pre></td></tr></table></figure>
+<p>近30天</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 where DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;&#x3D; date(时间字段名)</span><br><span class="line">本月SELECT * FROM 表名 WHERE DATE_FORMAT( 时间字段名, &#39;%Y%m&#39; ) &#x3D; DATE_FORMAT( CURDATE( ) , &#39;%Y%m&#39; )</span><br><span class="line">上一月SELECT * FROM 表名 WHERE PERIOD_DIFF( date_format( now( ) , &#39;%Y%m&#39; ) , date_format( 时间字段名, &#39;%Y%m&#39; ) ) &#x3D;1</span><br></pre></td></tr></table></figure>
+<p>查询本季度数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from &#96;ht_invoice_information&#96; where QUARTER(create_date)&#x3D;QUARTER(now());</span><br></pre></td></tr></table></figure>
+<p>查询上季度数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from &#96;ht_invoice_information&#96; where QUARTER(create_date)&#x3D;QUARTER(DATE_SUB(now(),interval 1 QUARTER));</span><br></pre></td></tr></table></figure>
+<p>查询本年数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from &#96;ht_invoice_information&#96; where YEAR(create_date)&#x3D;YEAR(NOW());</span><br></pre></td></tr></table></figure>
+<p>查询上年数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from &#96;ht_invoice_information&#96; where year(create_date)&#x3D;year(date_sub(now(),interval 1 year));</span><br></pre></td></tr></table></figure>
+<p>查询当前这周的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT name,submittime FROM enterprise WHERE YEARWEEK(date_format(submittime,&#39;%Y-%m-%d&#39;)) &#x3D; YEARWEEK(now());</span><br></pre></td></tr></table></figure>
+<p>查询上周的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT name,submittime FROM enterprise WHERE YEARWEEK(date_format(submittime,&#39;%Y-%m-%d&#39;)) &#x3D; YEARWEEK(now())-1;</span><br></pre></td></tr></table></figure>
+<p>查询上个月的数据<br><img src="evernotecid://A70C830B-FADB-4C9E-AFA8-453E4049A178/appyinxiangcom/26577542/ENResource/p207" alt="51e409b11aa51c150090697429a953ed.gif"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select name,submittime from enterprise where date_format(submittime,&#39;%Y-%m&#39;)&#x3D;date_format(DATE_SUB(curdate(), INTERVAL 1 MONTH),&#39;%Y-%m&#39;)</span><br><span class="line"></span><br><span class="line">select * from user where DATE_FORMAT(pudate,&#39;%Y%m&#39;) &#x3D; DATE_FORMAT(CURDATE(),&#39;%Y%m&#39;) ; </span><br><span class="line"></span><br><span class="line">select * from user where WEEKOFYEAR(FROM_UNIXTIME(pudate,&#39;%y-%m-%d&#39;)) &#x3D; WEEKOFYEAR(now()) </span><br><span class="line"></span><br><span class="line">select * from user where MONTH(FROM_UNIXTIME(pudate,&#39;%y-%m-%d&#39;)) &#x3D; MONTH(now()) </span><br><span class="line"></span><br><span class="line">select * from user where YEAR(FROM_UNIXTIME(pudate,&#39;%y-%m-%d&#39;)) &#x3D; YEAR(now()) and MONTH(FROM_UNIXTIME(pudate,&#39;%y-%m-%d&#39;)) &#x3D; MONTH(now()) select * from user where pudate between  上月最后一天  and 下月第一天 </span><br></pre></td></tr></table></figure>
+<p><img src="evernotecid://A70C830B-FADB-4C9E-AFA8-453E4049A178/appyinxiangcom/26577542/ENResource/p207" alt="51e409b11aa51c150090697429a953ed.gif"><br>查询当前月份的数据 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name,submittime from enterprise   where date_format(submittime,&#39;%Y-%m&#39;)&#x3D;date_format(now(),&#39;%Y-%m&#39;)</span><br></pre></td></tr></table></figure>
+<p>查询距离当前现在6个月的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name,submittime from enterprise where submittime between date_sub(now(),interval 6 month) and now();</span><br></pre></td></tr></table></figure>
+
+
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
 <p> <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
 
     
@@ -381,7 +407,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://www.blog.rdtalk.cn/2019/09/29/2019-09-29-live-Blog/" title="怎样让你的钱生钱？" target="_blank">http://www.blog.rdtalk.cn/2019/09/29/2019-09-29-live-Blog/</a>
+          <a href="http://www.blog.rdtalk.cn/2021/02/18/2021-02-19-tech-Blog/" title="mysql时间差查询常规操作" target="_blank">http://www.blog.rdtalk.cn/2021/02/18/2021-02-19-tech-Blog/</a>
         </li>
         
         <li>
@@ -403,11 +429,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
@@ -463,7 +493,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2019/09/29/2019-09-29-live-Blog/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/02/18/2021-02-19-tech-Blog/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -478,18 +508,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/04/01/2020-04-01-tech-Blog/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/02/18/2021-02-18-tech-Blog/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          记tomcat8 读取mysql longblob类型文本 乱码问题（实则UTF-8与GBK 混淆）
+          git常规操作
         
       </div>
     </a>
   
   
-    <a href="/2019/09/28/2019-09-28-live-Blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">初识指数基金</div>
+    <a href="/2021/01/24/2021-01-24-tech-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">阿里服务器安装docker 给小程序 部署 springboot 项目</div>
       <i class="icon-circle-right"></i>
     </a>
   
