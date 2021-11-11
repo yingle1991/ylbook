@@ -23,7 +23,7 @@ String enstr=Encrypter.encrypt(password,Encrypter.generateSign(md5String,md5Key)
 String denstr=Encrypter.decrypt(enstr,Encrypter.generateSign(md5String,md5Key));//后台所有密码以此方式解密
 
 ```
-
+<!--more-->
 
 ```flow
 
