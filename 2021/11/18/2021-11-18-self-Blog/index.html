@@ -6,17 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>Archives | ylBook</title>
+  <title>微信小程序调用腾讯地图返回 IP未被授权错误。 | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ylBook">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/archives/page/3/index.html">
+  <meta name="description" content="功能需求 微信小程序提供的接口能够获取到当前位置的坐标（经纬度），但是不能得到当前位置的地址。或者从后台获取到坐标（经纬度）要解析成文字描述的地址小程序也没有对应的接口。 实现思路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序调用腾讯地图返回 IP未被授权错误。">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/11/18/2021-11-18-self-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
+<meta property="og:description" content="功能需求 微信小程序提供的接口能够获取到当前位置的坐标（经纬度），但是不能得到当前位置的地址。或者从后台获取到坐标（经纬度）要解析成文字描述的地址小程序也没有对应的接口。 实现思路">
 <meta property="og:locale">
+<meta property="og:image" content="https://img.soogif.com/Wg3JdMmgo2D599rMb1FRx6tpRlEe0Me1.gif?scope=mdnice">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/2021-11-18/1637244751613-image.png">
+<meta property="og:image" content="https://img.soogif.com/sjo887jBzEvoHHtjBdo0lAVfMbXkGtva.png?scope=mdnice">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/2021-11-18/1637244867048-image.png">
+<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
+<meta property="article:published_time" content="2021-11-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-18T14:44:26.238Z">
 <meta property="article:author" content="闾丘齐心">
+<meta property="article:tag" content="开源">
+<meta property="article:tag" content="小程序">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.soogif.com/Wg3JdMmgo2D599rMb1FRx6tpRlEe0Me1.gif?scope=mdnice">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -266,164 +278,323 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-2021-11-18-self-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2018/04/01/hello-world/" class="archive-article-date">
-        <time datetime="2018-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-01</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2018/04/01/hello-world/" target="_blank">Hello World</a>
   
+    <h1 class="article-title" itemprop="name">
+      微信小程序调用腾讯地图返回 IP未被授权错误。
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-          
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
+<a href="/2021/11/18/2021-11-18-self-Blog/" class="archive-article-date">
+        <time datetime="2021-11-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-18</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">909字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><img src="https://img.soogif.com/Wg3JdMmgo2D599rMb1FRx6tpRlEe0Me1.gif?scope=mdnice"><br>功能需求</p>
+<p>微信小程序提供的接口能够获取到当前位置的坐标（经纬度），但是不能得到当前位置的地址。或者从后台获取到坐标（经纬度）要解析成文字描述的地址小程序也没有对应的接口。</p>
+<p>实现思路</p>
+<a id="more"></a> 
+
+<p>这时候就需要通过腾讯位置服务来实现，但在这之前需要有腾讯位置服务的账号和开发密钥（key）。实现过程我就简单参看官网上的步骤，这里主要给大家几个前车之鉴，欢迎各位小伙伴留言补充。</p>
+<p>官网：<a target="_blank" rel="noopener" href="http://lbs.qq.com/index.html">腾讯地图</a></p>
+<p>关键代码</p>
+<p>// 引入SDK核心类<br>var QQMapWX = require(‘../../utils/js/qqmap-wx-jssdk.js’);<br>var qqmapsdk;</p>
+<p>Page({</p>
+<pre><code>onLoad: function () &#123;
+    // 实例化API核心类
+    var qqmapsdk = new QQMapWX(&#123;
+        key: &#39;xxxx-xxxx-xxxx-xxxx-xxxx-xxxx&#39; // 开发密钥（key）必填
+    &#125;);
+&#125;,
+
+// 获取当前地理坐标
+onReady: function () &#123;
+    var _this = this;
+    wx.getLocation(&#123;
+      type: &#39;gcj02&#39;,
+      altitude: true,
+      success: (res) =&gt; &#123;
+        var latitude = res.latitude // 经度
+        var longitude = res.longitude // 纬度
+        // 根据坐标调用 pointToAddress 方法
+        _this.pointToAddress(latitude, longitude, function (address) &#123;
+            // 得到最终地址
+            console.log(address);
+        &#125;
+      &#125;
+    &#125;)
+&#125;,
+
+// 定义 pointToAddress 方法
+pointToAddress: function (latitude, longitude, callback) &#123;
+    var _this = this;
+    // 调用接口
+    qqmapsdk.reverseGeocoder(&#123;
+      location: &#123;
+        latitude: latitude,
+        longitude: longitude
+      &#125;,
+      success: function (res) &#123;
+        // 解析成功返回地址
+        callback(res.result.address);
+      &#125;,
+      fail: function (res) &#123;
+        console.log(res);
+      &#125;,
+      complete: function (res) &#123;
+        console.log(res);
+      &#125;
+    &#125;);
+&#125;,</code></pre>
+<p>})</p>
+<p>报错处理</p>
+<p>常见报错（一）我在实际应用中并未遇到，这个域名写不写应该均可；</p>
+<p>报错：<a target="_blank" rel="noopener" href="http://apis.map.qq.com/">http://apis.map.qq.com</a> 不在以下 request 合法域名列表中</p>
+<p>原因：出现这个报错是因为你在小程序中发起了wx.request请求,但是请求的域名(<a target="_blank" rel="noopener" href="http://apis.map.qq.com)没有在微信公众平台后台配置./">http://apis.map.qq.com)没有在微信公众平台后台配置。</a></p>
+<p>解决方法：配置request合法域名，把<a target="_blank" rel="noopener" href="https://apis.map.qq.com添加到你的request合法域名中.(微信公众平台—设置—开发设置—服务器域名)./">https://apis.map.qq.com添加到你的request合法域名中。(微信公众平台—设置—开发设置—服务器域名)。</a></p>
+<p>Tips：添加后需刷新项目，并重新编译才会有效果，否则可能无效。</p>
+<p>常见报错（二）</p>
+<p><strong>此报错解决方案1仅限 在服务器端掉用时，因为服务器的IP一般是固定的，小程序报错解决方案请参照方案2</strong></p>
+<p>报错：请求来源未被授权</p>
+<p>方案1（服务端掉用）：没有配置开发密钥(key)或者配置错误。</p>
+<p>解决方法：在腾讯位置服务平台(<a target="_blank" rel="noopener" href="https://lbs.qq.com/)%E8%AE%BE%E7%BD%AE%E5%BC%80%E5%8F%91%E5%AF%86%E9%92%A5(key)%E7%9A%84">https://lbs.qq.com/)设置开发密钥(key)的</a> WebServiceAPI 授权IP。(控制台—密钥(key)管理—密钥设置)。</p>
+<p>第一步：勾选微信小程序，并填写小程序ID。</p>
+<p>第二步：勾选WebServiceAPI，并设置授权IP(你的服务器域名或IP)。</p>
+<p>Tips：同样添加后刷新项目，并重新编译才会有效果，否则可能无效。</p>
+<p>我的用小程序调用参照此方法设置成本地IP了，本地正常访问，但是部署到体验版，一样报错 </p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/2021-11-18/1637244751613-image.png"></p>
+<p><img src="https://img.soogif.com/sjo887jBzEvoHHtjBdo0lAVfMbXkGtva.png?scope=mdnice"></p>
+<p>方案2（小程序端掉用）:</p>
+<p>解决方法：在腾讯位置服务平台(<a target="_blank" rel="noopener" href="https://lbs.qq.com/)%E8%AE%BE%E7%BD%AE%E5%BC%80%E5%8F%91%E5%AF%86%E9%92%A5(key)%E7%9A%84">https://lbs.qq.com/)设置开发密钥(key)的</a> WebServiceAPI 授权IP。(控制台—密钥(key)管理—密钥设置)。</p>
+<p>第一步：勾选微信小程序，并填写小程序ID。</p>
+<p>第二步：勾选域名白名单，并设置域名-》servicewechat.com。</p>
+<p><img src="https://gitee.com/yingle1991/resource/raw/master/2021-11-18/1637244867048-image.png"></p>
+<p>测试结果</p>
+<p>测试没问题，能取到数据，并且零报错。</p>
+<p>Tips：这些方法不仅适用于坐标解析(reverseGeocoder)，还适用于距离计算(calculateDistance)，地点搜索(search)，获取城市列表(getCityList)等等场景。</p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<pre><code>                                                - EOF -</code></pre>
+<p>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.png">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          闾丘齐心
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://www.blog.rdtalk.cn/2021/11/18/2021-11-18-self-Blog/" title="微信小程序调用腾讯地图返回 IP未被授权错误。" target="_blank">http://www.blog.rdtalk.cn/2021/11/18/2021-11-18-self-Blog/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
   </div>
-</article>
-  
+  <div class="article-info article-info-index">
     
     
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2017/09/29/2017-09-29-git-Blog/" class="archive-article-date">
-        <time datetime="2017-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2017/09/29/2017-09-29-git-Blog/" target="_blank">忆开发中的坏习惯</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">开源</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2016/11/11/2016-11-11-git-Blog/" class="archive-article-date">
-        <time datetime="2016-11-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-11</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2016/11/11/2016-11-11-git-Blog/" target="_blank">用git与Jekyll 搭建面向世界的博客</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
+      		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/11/18/2021-11-18-self-Blog/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
   
+  
+    <a href="/2021/11/18/2021-11-18-work-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">mysql 时间常用语句。</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -464,8 +635,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
