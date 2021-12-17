@@ -273,6 +273,217 @@
             
 
   
+    <article id="post-2018-05-15-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2018/05/15/2018-05-15-work-Blog/" target="_blank">技术交接记录</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2018/05/15/2018-05-15-work-Blog/" class="archive-article-date">
+        <time datetime="2018-05-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-15</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>##端点进行阳光采购前后台培训##</p>
+<p>测试:</p>
+<pre><code>tcg.jdsn.com.cn
+tacg.jdsn.com.cn</code></pre>
+<p>预发：</p>
+<pre><code>qcg.jdsn.com.cn
+qacg.jdsn.com.cn</code></pre>
+<p>正式：</p>
+<pre><code>cg.jdsn.com.cn
+acg.jdsn.com.cn</code></pre>
+<ol>
+<li>前台操作步骤</li>
+</ol>
+<ul>
+<li><blockquote>
+<p>components/ resource内</p>
+<p>front_config.yaml 表单注册关系；</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>back_config.yaml URL与注册关联真实路径（后台提供);</p>
+<p>view.hbs 可视化界面（主界面）</p>
+</blockquote>
+<blockquote>
+<p>*-setting 主要设计模板运用的内容界面（list遍历，数据打印）</p>
+</blockquote>
+<ol start="2">
+<li>git 工作流程</li>
+</ol>
+<p>-<br><img src="https://i.imgur.com/9ZPU5pY.png" alt="工作流程图"></p>
+<ol>
+<li><p>master-正式发布版</p>
+<p> 保留正式环境发布代码最新</p>
+</li>
+<li><p>devlop-开发测试版</p>
+<p> 供业务人员测试环境</p>
+</li>
+<li><p>release-预发版</p>
+<p> 从开发测试切出分支到release,预发测试，有改动，合并到devlop与master分支</p>
+</li>
+<li><p>feature-开发功能版（可有多个）</p>
+<p> 开发接到新功能，从dev分支down下然后再feature目录下创建新分支，开发完毕合并到devlop分支</p>
+</li>
+<li><p>hotfix-紧急开发任务</p>
+<p> 紧急开发任务从master 分支down 下主要代码，开发测试完毕合并到devlop 分支与master 分支保证代码最新</p>
+</li>
+<li><p>git 命令</p>
+</li>
+</ol>
+<p>-</p>
+<ul>
+<li><p>下载</p>
+<p>  git clone git地址</p>
+</li>
+<li><p>切换本地分支</p>
+<p>  git checkout -b develop origin/develop</p>
+</li>
+</ul>
+<p>待完善。。。。</p>
+<h2 id="4-代码级应用"><a href="#4-代码级应用" class="headerlink" title="4.代码级应用"></a>4.代码级应用</h2><p>ExtraMap.get(article.getExtra())==&gt;<br>    ##端点进行阳光采购前后台培训##</p>
+<pre><code>测试:
+
+    tcg.jdsn.com.cn
+    tacg.jdsn.com.cn
+
+预发：
+
+    qcg.jdsn.com.cn
+    qacg.jdsn.com.cn
+正式：
+
+    cg.jdsn.com.cn
+    acg.jdsn.com.cn
+
+1. 前台操作步骤
+- 
+
+&gt;components/ resource内
+&gt; 
+&gt; front_config.yaml 表单注册关系；
+
+&gt; back_config.yaml URL与注册关联真实路径（后台提供);
+&gt; 
+&gt; view.hbs 可视化界面（主界面）
+
+&gt; *-setting 主要设计模板运用的内容界面（list遍历，数据打印）
+
+2. git 工作流程
+-
+![工作流程图](https://i.imgur.com/9ZPU5pY.png)
+
+1. master-正式发布版
+
+    保留正式环境发布代码最新
+2. devlop-开发测试版
+
+    供业务人员测试环境
+3. release-预发版
+
+    从开发测试切出分支到release,预发测试，有改动，合并到devlop与master分支
+4. feature-开发功能版（可有多个）
+
+    开发接到新功能，从dev分支down下然后再feature目录下创建新分支，开发完毕合并到devlop分支
+
+5. hotfix-紧急开发任务
+
+    紧急开发任务从master 分支down 下主要代码，开发测试完毕合并到devlop 分支与master 分支保证代码最新
+
+3. git 命令
+-
+- 下载
+
+    git clone git地址
+
+- 切换本地分支
+
+    git checkout -b develop origin/develop
+
+待完善。。。。
+
+4.代码级应用
+-
+
+ExtraMap.get(article.getExtra())==&gt;</code></pre>
+<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#105;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#x79;&#105;&#x6e;&#103;&#108;&#x65;&#x31;&#x39;&#x39;&#x31;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2018/05/15/2018-05-15-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -633,6 +844,14 @@
   		本站访客数<span id="busuanzi_value_site_uv"></span>人
   	</span>
   
+  
+	<script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+	<script>
+	  if (window.mermaid) {
+		mermaid.initialize({theme: 'forest'});
+	  }
+	</script>
+  
 </footer>
 
     </div>
@@ -789,6 +1008,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
             <div class="clearfix"></div>

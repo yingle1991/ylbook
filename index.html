@@ -273,6 +273,195 @@
             
 
   
+    <article id="post-2021-12-17-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2021/12/17/2021-12-17-work-Blog/" target="_blank">博客支持 mermaid</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2021/12/17/2021-12-17-work-Blog/" class="archive-article-date">
+        <time datetime="2021-12-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>安装插件<br>npm install hexo-filter-mermaid-diagrams<br>修改配置文件<br>在hexo的_config.yml文件（根目录的并非主题的）中，添加以下内容：</p>
+    
+    <a class="article-more-a" href="/2021/12/17/2021-12-17-work-Blog/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">开源</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2021/12/17/2021-12-17-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2021-11-19-self-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2021/11/19/2021-11-19-self-Blog/" target="_blank">H5 小程序 CSS 控制 文字显示两种颜色</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2021/11/19/2021-11-19-self-Blog/" class="archive-article-date">
+        <time datetime="2021-11-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-19</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>百度告诉我 attr</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;view content&#x3D;&quot;19&quot; class&#x3D;&quot;_span&quot;&gt;19&lt;&#x2F;view&gt;</span><br><span class="line"></span><br><span class="line">._span &#123;</span><br><span class="line">		font-size: 150upx;</span><br><span class="line">		font-weight: 900;</span><br><span class="line">		color: black;</span><br><span class="line">		font-family: &#39;Courier New&#39;, Courier, monospace;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	._span::before &#123;</span><br><span class="line">		position: absolute;</span><br><span class="line">		height: 50%;</span><br><span class="line">		content: attr(content);</span><br><span class="line">		overflow: hidden;</span><br><span class="line">		color: white;</span><br><span class="line">		z-index: 999;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>但是 H5显示正常 部署到小程序  就是不行 一直读不到 ::before 的content</p>
+<p>于是查看小程序API 确认不支持 attr 属性</p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<pre><code>                                                - EOF -</code></pre>
+<p>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2021/11/19/2021-11-19-self-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2021-11-18-self-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -338,100 +527,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2021/11/18/2021-11-18-self-Blog/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2021-11-18-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/11/18/2021-11-18-work-Blog/" target="_blank">mysql 时间常用语句。</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/11/18/2021-11-18-work-Blog/" class="archive-article-date">
-        <time datetime="2021-11-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-18</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>最近在做的项目在处理 定时查询 年、月、日销售额，所以总结了一些 mysql对于时间的查询语句，方便以后查阅调用！有何遗漏的，小伙伴们留言补充吧～3Q</p>
-<p>今天</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from 表名 where to_days(时间字段名) &#x3D; to_days(now());</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2021/11/18/2021-11-18-work-Blog/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">开源</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/11/18/2021-11-18-work-Blog/">展开全文 >></a>
     </p>
     
 
@@ -1140,98 +1235,6 @@
 
 
   
-    <article id="post-2020-12-10-flutter-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/12/10/2020-12-10-flutter-Blog/" target="_blank">登录token认证以及密码加密</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/12/10/2020-12-10-flutter-Blog/" class="archive-article-date">
-        <time datetime="2020-12-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-10</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h4 id="1-登录认证"><a href="#1-登录认证" class="headerlink" title="1.登录认证"></a>1.登录认证</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">md5String 加密对象=时间戳</span><br><span class="line">md5Key md5加密浴 =APITest</span><br><span class="line">    </span><br><span class="line">String enstr=Encrypter.encrypt(password,Encrypter.generateSign(md5String,md5Key));<span class="comment">//传递所有密码以此方式加密传递</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">String denstr=Encrypter.decrypt(enstr,Encrypter.generateSign(md5String,md5Key));<span class="comment">//后台所有密码以此方式解密</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2020/12/10/2020-12-10-flutter-Blog/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/12/10/2020-12-10-flutter-Blog/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1269,6 +1272,14 @@
   	<span id="busuanzi_container_site_uv" style='display:none'>
   		本站访客数<span id="busuanzi_value_site_uv"></span>人
   	</span>
+  
+  
+	<script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+	<script>
+	  if (window.mermaid) {
+		mermaid.initialize({theme: 'forest'});
+	  }
+	</script>
   
 </footer>
 
@@ -1426,6 +1437,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
             <div class="clearfix"></div>
