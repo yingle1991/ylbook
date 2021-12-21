@@ -6,28 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.blog.rdtalk.cn">
-  <title>我是程序员，邀请你和我一起帮助宝贝回家。 | ylBook</title>
+  <title>设计模式之一 | ylBook</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～ 今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。 改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。">
+  <meta name="description" content="简单工厂模式  定义 严格意义简单工厂模式并非设计模式，比较像一种编码习惯。由于经常被使用，因此被大多数程序研发人员误认为是“工厂模式”。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我是程序员，邀请你和我一起帮助宝贝回家。">
-<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/index.html">
+<meta property="og:title" content="设计模式之一">
+<meta property="og:url" content="http://www.blog.rdtalk.cn/2021/12/21/2021-12-21-work-Blog/index.html">
 <meta property="og:site_name" content="ylBook">
-<meta property="og:description" content="做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～ 今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。 改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。">
+<meta property="og:description" content="简单工厂模式  定义 严格意义简单工厂模式并非设计模式，比较像一种编码习惯。由于经常被使用，因此被大多数程序研发人员误认为是“工厂模式”。">
 <meta property="og:locale">
-<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/2021-11-9/1636419516723-image.png">
-<meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/2021-11-9/1636419687444-image.png">
-<meta property="og:image" content="https://img.soogif.com/RNFWjMTwYmgAqDbyRF5J1PJ3dhB16La6.gif?scope=mdnice">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
-<meta property="article:published_time" content="2021-11-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-11-09T01:03:14.823Z">
+<meta property="article:published_time" content="2021-12-20T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-21T05:59:21.733Z">
 <meta property="article:author" content="闾丘齐心">
-<meta property="article:tag" content="生活">
-<meta property="article:tag" content="技术">
+<meta property="article:tag" content="设计思路">
+<meta property="article:tag" content="架构之路">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/2021-11-9/1636419516723-image.png">
+<meta name="twitter:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
   
     <link rel="alternative" href="/atom.xml" title="ylBook" type="application/atom+xml">
   
@@ -277,14 +274,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2021-11-08-life-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2021-12-21-work-Blog" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      我是程序员，邀请你和我一起帮助宝贝回家。
+      设计模式之一
     </h1>
   
 
@@ -296,8 +293,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2021/11/08/2021-11-08-life-Blog/" class="archive-article-date">
-        <time datetime="2021-11-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-08</time>
+<a href="/2021/12/21/2021-12-21-work-Blog/" class="archive-article-date">
+        <time datetime="2021-12-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-21</time>
 </a>
 
   
@@ -310,7 +307,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">698字</span>
+      <span class="post-count">239字</span>
     </span>
   </span>
 
@@ -319,7 +316,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">1分</span>
     </span>
   </span>
 </div>
@@ -330,36 +327,216 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>做了很久的程序猿，总想为社会公益献出一份力！孩子的安好，永远牵动着人们的心～</p>
-<p>今天，来讲一个由腾讯公益发起的互联网公益活动：宝贝，公益404带你们回家。</p>
-<p>改变世界的不是技术，是技术背后的梦想和责任！国人要爱管闲事，在机场码头车站看见任何可疑孩子都应该过去问一下，也许你的爱管闲事会救下孩子，中国需要更多爱管闲事的人。</p>
+    <ol>
+<li><p>简单工厂模式</p>
+<ol>
+<li><p>定义</p>
+<p>严格意义简单工厂模式并非设计模式，比较像一种编码习惯。由于经常被使用，因此被大多数程序研发人员误认为是“工厂模式”。</p>
+</li>
+</ol>
 <a id="more"></a> 
 
-<p><img src="https://gitee.com/yingle1991/resource/raw/master/2021-11-9/1636419516723-image.png" alt="图片"></p>
-<p>接入方式非常简单，就只需要加入一行代码到你的 404 页面即可：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">    src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; </span><br><span class="line">    charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>类图</li>
+</ol>
+<pre class="mermaid">   classDiagram
+            PizzaStore --|> SimpleFactory
+            SimpleFactory --|>Pizza
+      Pizza <|.. CheesePizza
+      Pizza <|.. VeggiePizza
+      Pizza : +String name
+      Pizza : +String area
+      Pizza : +准备()
+      Pizza : +烘焙()
+      Pizza : +装饰()
+      Pizza : +打包()
+      class PizzaStore{
+              SimpleFactory factory
+          +Pizza OrderPizza()
+      }
+      class SimpleFactory{
+          +Pizza createPizza()
+      }
+      class CheesePizza{
+      }
+      class VeggiePizza{
+      }</pre>
 
-<p>同时，在404页面，默认是返回腾讯网，但是这个超链接可以定制化，修改homePageUrl和homePageName两个参数即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">    src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; </span><br><span class="line">    charset&#x3D;&quot;utf-8&quot; </span><br><span class="line">    homePageUrl&#x3D;&quot;http:&#x2F;&#x2F;yoursite.com&#x2F;yourPage.html&quot; homePageName&#x3D;&quot;回到我的主页&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>解释</p>
+<p>适用于小作坊，包含多个具体产品，</p>
+<p>SimpleFactory 就是生产产品的工厂，他应该是我们唯一用到具体Pizza类（CheesePizza、VeggiePizza）的地方。</p>
+<p>PizzaStore 是工厂的客户，通过SimpleFactory 工厂取得Pizza实例。</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>工厂方法模式</p>
+<ol>
+<li><p>定义</p>
+<p>定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个，工厂方法让类把实例化推迟到子类。</p>
+</li>
+<li><p>类图</p>
+</li>
+</ol>
+<pre class="mermaid">   classDiagram
+            PizzaStore <|.. NYPizzaStore
+            PizzaStore <|.. ChinaPizzaStore
+            PizzaStore --|> Pizza
+      Pizza <|.. NYPizza
+      Pizza <|.. ChinaPizza
+      NYPizzaStore --|> NYPizza
+      ChinaPizzaStore --|>ChinaPizza
+      <<abstract>> Pizza
+      Pizza : +String name
+      Pizza : +String area
+      Pizza : +准备()
+      Pizza : +烘焙()
+      Pizza : +装饰()
+      Pizza : +打包()
+      class PizzaStore{
+              <<abstract>>
+          +final OrderPizza()
+          +Pizza createPizza()
+      }
+      class NYPizzaStore{
+          +Pizza createPizza()
+      }
+      class ChinaPizzaStore{
+          +Pizza createPizza()
+      }
 
-<p>这样的 404 页面被人触发，然后偶然瞟一眼的概率大吗？</p>
-<p>是的，不大，甚至可以说非常低。</p>
-<p>但是，非常低，也属于有一定的概率，哪怕是一万个人中只有一个人看了一眼呢？这一眼，也许就能带来一点点的希望。</p>
-<h3 id="然而我对接完的界面是这样的："><a href="#然而我对接完的界面是这样的：" class="headerlink" title="然而我对接完的界面是这样的："></a>然而我对接完的界面是这样的：</h3><p><img src="https://gitee.com/yingle1991/resource/raw/master/2021-11-9/1636419687444-image.png"></p>
-<p><img src="https://img.soogif.com/RNFWjMTwYmgAqDbyRF5J1PJ3dhB16La6.gif?scope=mdnice"></p>
-<p>既然想做就得做完整，继续百度。。。</p>
-<p>仅需要在404页面加几行代码即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;https:&#x2F;&#x2F;api.isoyu.com&#x2F;gy&#x2F;&quot; frameborder&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot; width&#x3D;&quot;300&quot; height&#x3D;&quot;400&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+      class NYPizza{
 
-<p>完成</p>
-<p>我国失踪儿童找回的概率有多大，我不知道，但是我知道的是概率肯定不是 100%。哪怕它是 99.99% 呢，谁愿意去承担那令人心碎的 0.01%？<br>我看到过太多太多令人心碎的、抱头痛哭的认亲场面了，这背后大多都是横跨几年，十几年，甚至几十年时间的相认，唏嘘不已。</p>
-<p>这个项目的出发点和落地都非常好，我也知道贡献的力量肯定是非常有限，但是哪怕是一丝丝有限的力量也好呀。</p>
-<p>有希望总是好的。</p>
-<p>小的时候我们都学过：勿以善小而不为，勿以恶小而为之。</p>
-<p>让科技更有温度，何乐而不为？因此 我呼吁用一行代码帮助宝贝回家～</p>
-<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
-<pre><code>                                                - EOF -</code></pre>
-<p>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+      }
+      class ChinaPizza{
+      }</pre>
+
+<ol>
+<li><p>解释</p>
+<p>满足于连锁店，多个具体产品要适应多种地域特色，比如纽约的具体产品和中国的具体产品是味道是不一样的。</p>
+<p>抽象创建者（Creator）类  PizzaStore 定义了一个抽象的工厂方法 createPizza，让子类（具体创建者）实现此方法制造自己的产品，他通常包含依赖于抽象产品的代码，而这些抽象产品由子类制造，他并不需要真的知道 在制造哪种具体产品。</p>
+<p>工厂生产产品，对于创建者 PizzaStore来说，产品就是Pizza，他的子类是具体的产品，所有实际生产出来的Pizza 都是他的子类。</p>
+</li>
+<li><p>优缺点</p>
+<p>解决了产品维度新增问题（新增具体产品的问题），只需要创建Pizza子类 ，并创建PizzaStore（创建者）的子类即可。</p>
+</li>
+<li><p>引申 </p>
+<ul>
+<li><p>依赖倒置原则（要依赖抽象，不要依赖具体类）</p>
+<p>变量不可以持有具体类的引用</p>
+<p>不要让类派生自具体类</p>
+<p>不要覆盖基类中已实现的方法</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>抽象工厂模式</p>
+<ol>
+<li><p>定义</p>
+<p>提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。</p>
+</li>
+<li><p>类图</p>
+ <pre class="mermaid">      classDiagram
+            PizzaStore <|.. NYPizzaStore
+            PizzaStore <|.. ChinaPizzaStore
+            PizzaStore --|> Pizza
+            Pizza <|.. ChinaPizza
+      Pizza <|.. NYPizza
+      NYPizzaStore --|> NYPizza
+      ChinaPizzaStore --|>ChinaPizza
+      <<abstract>> Pizza
+      Pizza : +String name
+      Pizza : +String area
+      Pizza : +准备材料()
+      Pizza : +烘焙()
+      Pizza : +装饰()
+      Pizza : +打包()
+      class PizzaStore{
+              <<abstract>>
+          +final OrderPizza()
+          +Pizza createPizza()
+      }
+      class NYPizzaStore{
+          +Pizza createPizza()
+      }
+      class ChinaPizzaStore{
+          +Pizza createPizza()
+      }
+
+      class NYPizza{
+
+      }
+      class ChinaPizza{
+      }
+      NYPizzaIngredientFactory <|-- NYPizzaStore
+      class PizzaIngredientFactory{
+          <<interface>>
+          +创建蘸酱
+          +创建面饼
+          +创建蔬菜
+          +创建肉
+          +创建芝士
+      }
+      PizzaIngredientFactory <|.. NYPizzaIngredientFactory
+      class NYPizzaIngredientFactory{
+          +创建蘸酱
+          +创建面饼
+          +创建蔬菜
+          +创建肉
+          +创建芝士
+      }
+      PizzaIngredientFactory <|.. ChinaPizzaIngredientFactory
+      class ChinaPizzaIngredientFactory{
+          +创建蘸酱
+          +创建面饼
+          +创建蔬菜
+          +创建肉
+          +创建芝士
+      }
+      蘸酱 <|.. 北京蘸酱
+      蘸酱 <|.. 纽约蘸酱
+      PizzaIngredientFactory --|>蘸酱
+      NYPizzaIngredientFactory --|>纽约蘸酱
+      ChinaPizzaIngredientFactory --|>北京蘸酱
+      NYPizza --|>蘸酱
+      class 蘸酱{
+          <<interface>>    
+      }
+      面饼 <|.. 北京面饼
+      面饼 <|.. 纽约面饼
+      PizzaIngredientFactory --|>面饼
+      NYPizzaIngredientFactory --|>纽约面饼
+      ChinaPizzaIngredientFactory --|>北京面饼
+      NYPizza --|>面饼
+      class 面饼{
+          <<interface>>    
+      }
+      芝士 <|.. 北京芝士
+      芝士 <|.. 纽约芝士
+      PizzaIngredientFactory --|>芝士
+      NYPizzaIngredientFactory --|>纽约芝士
+      ChinaPizzaIngredientFactory --|>北京芝士
+      NYPizza --|>芝士
+      NYPizza --|>PizzaIngredientFactory
+      class 芝士{
+          <<interface>>    
+      }</pre>
+
+
+
+</li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li>解释</li>
+</ol>
+<p>​            NYPizzaStore 是抽象工厂的客户，负责创建Pizza 具体产品（NYPizza） ， 传入原料工厂的实例（NYPizzaIngredientFactory），工厂被要求准备原料。</p>
+<p>​            PizzaIngredientFactory 是抽象的Pizza原料工厂接口，他定义了如何产生一个相关产品的家族，这个家族包含了所有制作Pizza的原料，子类负责生产Pizza原料，每个工厂都知道如何产生符合自己区域的正确产品，对于此产品家族，每个工厂都有不同的实现，ChinaPizzaIngredientFactory，生产 北京面饼、北京芝士、北京蘸酱。</p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！<br>                                                    - EOF -<br>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
 
     
 
@@ -406,7 +583,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/" title="我是程序员，邀请你和我一起帮助宝贝回家。" target="_blank">http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/</a>
+          <a href="http://www.blog.rdtalk.cn/2021/12/21/2021-12-21-work-Blog/" title="设计模式之一" target="_blank">http://www.blog.rdtalk.cn/2021/12/21/2021-12-21-work-Blog/</a>
         </li>
         
         <li>
@@ -428,11 +605,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计思路</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">架构之路</a>
         		</li>
       		
 		</ul>
@@ -488,7 +665,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/11/08/2021-11-08-life-Blog/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://www.blog.rdtalk.cn/2021/12/21/2021-12-21-work-Blog/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -503,18 +680,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/11/18/2021-11-18-self-Blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          微信小程序调用腾讯地图返回 IP未被授权错误。
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/02/24/2021-02-24-work-Blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我是程序员，抱上笔记本，来一场说走就走的旅行，知你如知己，正如写到这，想到了你此刻的目光。</div>
+    <a href="/2021/12/17/2021-12-17-work-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客支持 mermaid</div>
       <i class="icon-circle-right"></i>
     </a>
   

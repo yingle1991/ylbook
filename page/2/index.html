@@ -96,7 +96,7 @@
 			
 				<li><a href="/tags/%E7%94%9F%E6%B4%BB/" target="_blank">生活杂谈</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF/" target="_blank">随笔</a></li>
 			
 			</ul>
 		</nav>
@@ -254,7 +254,7 @@
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/%E7%94%9F%E6%B4%BB/">生活杂谈</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -271,6 +271,107 @@
           </div>
           <div id="js-content" class="content-ll">
             
+
+  
+    <article id="post-2021-01-18-tech-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2021/01/18/2021-01-18-tech-Blog/" target="_blank">service 启动 tomcat 后台保存以及查看 汉字编码异常解决</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2021/01/18/2021-01-18-tech-Blog/" class="archive-article-date">
+        <time datetime="2021-01-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-18</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><strong>### 用startup.bat启动</strong></p>
+<p>编码解决：</p>
+<p>用编辑器打开catalina.bat文件找到set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% </p>
+<p>“更改为 set “JAVA_OPTS=%JAVA_OPTS% %JSSE_OPTS% -Dfile.encoding=UTF-8”</p>
+<p>问题得到解决 </p>
+<p><strong>### 用service启动</strong></p>
+    
+    <a class="article-more-a" href="/2021/01/18/2021-01-18-tech-Blog/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bug</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2021/01/18/2021-01-18-tech-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
     <article id="post-2020-12-10-flutter-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -1172,118 +1273,6 @@
 
 
   
-    <article id="post-2018-06-25-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2018/06/25/2018-06-25-work-Blog/" target="_blank">服务器初始化java 环境记录</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2018/06/25/2018-06-25-work-Blog/" class="archive-article-date">
-        <time datetime="2018-06-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-25</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>###服务器初始化java 环境记录</p>
-<p>接到外包将一个简单的web项目部署到系统，也由于好久没做过基本配置了。现记录如下：<br>由于要部署的服务器不在外网公布，所以部署需要在teamViewer的配合下，安装个人版，设置为开机启动（你懂的。。。）</p>
-<ol>
-<li><p>下载Java绿色安装包，配置环境变量</p>
-<pre><code> 配置java_home
- JAVA_HOME:&#39;E:\work_tool\java1.8.131\jdk1.8.0_131&#39;
-
- 增加PATH
- PATH+=&#39;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;&#39;
-
- 配置CLASS_PATH
- CLASS_PATH:&#39;.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar&#39;</code></pre>
-</li>
-<li><p>安装mysql，可视化工具（可选）</p>
-<pre><code> 默认就好，导入sql,source d:/xxx.sql;</code></pre>
-</li>
-<li><p>安装tomcat</p>
-<pre><code> 绿色版：
- 解压将打出war包放到webapps，待加压完成之后修改配置文件sql账号密码；
- 进入 tomcat bin目录 
- 安装tomcat服务
- service.bat install
- 移除 tomcat服务
- services.bat remove</code></pre>
-</li>
-</ol>
-<p>纯属开发笔记，有啥补充尽可联系我~<br><a href="mailto:&#x79;&#x69;&#x6e;&#103;&#x6c;&#x65;&#x31;&#x39;&#x39;&#49;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#x79;&#x69;&#x6e;&#103;&#x6c;&#x65;&#x31;&#x39;&#x39;&#49;&#x40;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2018/06/25/2018-06-25-work-Blog/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1490,6 +1479,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计思路</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">架构之路</a>
               </li>
             
             <div class="clearfix"></div>
