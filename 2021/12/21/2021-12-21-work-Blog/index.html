@@ -19,7 +19,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png">
 <meta property="article:published_time" content="2021-12-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-21T05:59:21.733Z">
+<meta property="article:modified_time" content="2021-12-24T09:31:43.738Z">
 <meta property="article:author" content="闾丘齐心">
 <meta property="article:tag" content="设计思路">
 <meta property="article:tag" content="架构之路">
@@ -307,7 +307,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">239字</span>
+      <span class="post-count">271字</span>
     </span>
   </span>
 
@@ -329,214 +329,199 @@
     
     <ol>
 <li><p>简单工厂模式</p>
-<ol>
+<ul>
 <li><p>定义</p>
 <p>严格意义简单工厂模式并非设计模式，比较像一种编码习惯。由于经常被使用，因此被大多数程序研发人员误认为是“工厂模式”。</p>
-</li>
-</ol>
 <a id="more"></a> 
-
-<ol start="2">
-<li>类图</li>
-</ol>
-<pre class="mermaid">   classDiagram
-            PizzaStore --|> SimpleFactory
-            SimpleFactory --|>Pizza
-      Pizza <|.. CheesePizza
-      Pizza <|.. VeggiePizza
-      Pizza : +String name
-      Pizza : +String area
-      Pizza : +准备()
-      Pizza : +烘焙()
-      Pizza : +装饰()
-      Pizza : +打包()
-      class PizzaStore{
-              SimpleFactory factory
-          +Pizza OrderPizza()
-      }
-      class SimpleFactory{
-          +Pizza createPizza()
-      }
-      class CheesePizza{
-      }
-      class VeggiePizza{
-      }</pre>
-
-<ol>
-<li><p>解释</p>
-<p>适用于小作坊，包含多个具体产品，</p>
-<p>SimpleFactory 就是生产产品的工厂，他应该是我们唯一用到具体Pizza类（CheesePizza、VeggiePizza）的地方。</p>
-<p>PizzaStore 是工厂的客户，通过SimpleFactory 工厂取得Pizza实例。</p>
-</li>
-</ol>
-</li>
-</ol>
-<ol start="2">
-<li><p>工厂方法模式</p>
-<ol>
-<li><p>定义</p>
-<p>定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个，工厂方法让类把实例化推迟到子类。</p>
 </li>
 <li><p>类图</p>
-</li>
-</ol>
-<pre class="mermaid">   classDiagram
-            PizzaStore <|.. NYPizzaStore
-            PizzaStore <|.. ChinaPizzaStore
-            PizzaStore --|> Pizza
-      Pizza <|.. NYPizza
-      Pizza <|.. ChinaPizza
-      NYPizzaStore --|> NYPizza
-      ChinaPizzaStore --|>ChinaPizza
-      <<abstract>> Pizza
-      Pizza : +String name
-      Pizza : +String area
-      Pizza : +准备()
-      Pizza : +烘焙()
-      Pizza : +装饰()
-      Pizza : +打包()
-      class PizzaStore{
-              <<abstract>>
-          +final OrderPizza()
-          +Pizza createPizza()
-      }
-      class NYPizzaStore{
-          +Pizza createPizza()
-      }
-      class ChinaPizzaStore{
-          +Pizza createPizza()
-      }
+<pre class="mermaid">         classDiagram
+        PizzaStore --|> SimpleFactory
+        SimpleFactory --|>Pizza
+        Pizza <|.. CheesePizza
+        Pizza <|.. VeggiePizza
+        Pizza : +String name
+        Pizza : +String area
+        Pizza : +准备()
+        Pizza : +烘焙()
+        Pizza : +装饰()
+        Pizza : +打包()
+        class PizzaStore{
+                SimpleFactory factory
+            +Pizza OrderPizza()
+        }
+        class SimpleFactory{
+            +Pizza createPizza()
+        }
+        class CheesePizza{
+        }
+        class VeggiePizza{
+        }</pre>
 
-      class NYPizza{
 
-      }
-      class ChinaPizza{
-      }</pre>
 
-<ol>
-<li><p>解释</p>
-<p>满足于连锁店，多个具体产品要适应多种地域特色，比如纽约的具体产品和中国的具体产品是味道是不一样的。</p>
-<p>抽象创建者（Creator）类  PizzaStore 定义了一个抽象的工厂方法 createPizza，让子类（具体创建者）实现此方法制造自己的产品，他通常包含依赖于抽象产品的代码，而这些抽象产品由子类制造，他并不需要真的知道 在制造哪种具体产品。</p>
-<p>工厂生产产品，对于创建者 PizzaStore来说，产品就是Pizza，他的子类是具体的产品，所有实际生产出来的Pizza 都是他的子类。</p>
-</li>
-<li><p>优缺点</p>
-<p>解决了产品维度新增问题（新增具体产品的问题），只需要创建Pizza子类 ，并创建PizzaStore（创建者）的子类即可。</p>
-</li>
-<li><p>引申 </p>
-<ul>
-<li><p>依赖倒置原则（要依赖抽象，不要依赖具体类）</p>
-<p>变量不可以持有具体类的引用</p>
-<p>不要让类派生自具体类</p>
-<p>不要覆盖基类中已实现的方法</p>
 </li>
 </ul>
 </li>
 </ol>
+<ul>
+<li><p>解释</p>
+<p>适用于小作坊，包含多个具体产品，<br>SimpleFactory 就是生产产品的工厂，他应该是我们唯一用到具体Pizza类（CheesePizza、VeggiePizza）的地方。<br>PizzaStore 是工厂的客户，通过SimpleFactory 工厂取得Pizza实例。</p>
 </li>
-<li><p>抽象工厂模式</p>
-<ol>
-<li><p>定义</p>
-<p>提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。</p>
+</ul>
+<ol start="2">
+<li><p>工厂方法模式</p>
+<ul>
+<li><p>定义<br>定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个，工厂方法让类把实例化推迟到子类。</p>
 </li>
 <li><p>类图</p>
- <pre class="mermaid">      classDiagram
-            PizzaStore <|.. NYPizzaStore
-            PizzaStore <|.. ChinaPizzaStore
-            PizzaStore --|> Pizza
-            Pizza <|.. ChinaPizza
-      Pizza <|.. NYPizza
-      NYPizzaStore --|> NYPizza
-      ChinaPizzaStore --|>ChinaPizza
-      <<abstract>> Pizza
-      Pizza : +String name
-      Pizza : +String area
-      Pizza : +准备材料()
-      Pizza : +烘焙()
-      Pizza : +装饰()
-      Pizza : +打包()
-      class PizzaStore{
-              <<abstract>>
-          +final OrderPizza()
-          +Pizza createPizza()
-      }
-      class NYPizzaStore{
-          +Pizza createPizza()
-      }
-      class ChinaPizzaStore{
-          +Pizza createPizza()
-      }
+<pre class="mermaid">         classDiagram
+        PizzaStore <|.. NYPizzaStore
+        PizzaStore <|.. ChinaPizzaStore
+        PizzaStore --|> Pizza
+        Pizza <|.. NYPizza
+        Pizza <|.. ChinaPizza
+        NYPizzaStore --|> NYPizza
+        ChinaPizzaStore --|>ChinaPizza
+        <&lt;abstract>> Pizza
+        Pizza : +String name
+        Pizza : +String area
+        Pizza : +准备()
+        Pizza : +烘焙()
+        Pizza : +装饰()
+        Pizza : +打包()
+        class PizzaStore{
+            +final OrderPizza()
+            +Pizza createPizza()
+        }
+        class NYPizzaStore{
+            +Pizza createPizza()
+        }
+        class ChinaPizzaStore{
+            +Pizza createPizza()
+        }
 
-      class NYPizza{
+        class NYPizza{
 
-      }
-      class ChinaPizza{
-      }
-      NYPizzaIngredientFactory <|-- NYPizzaStore
-      class PizzaIngredientFactory{
-          <<interface>>
-          +创建蘸酱
-          +创建面饼
-          +创建蔬菜
-          +创建肉
-          +创建芝士
-      }
-      PizzaIngredientFactory <|.. NYPizzaIngredientFactory
-      class NYPizzaIngredientFactory{
-          +创建蘸酱
-          +创建面饼
-          +创建蔬菜
-          +创建肉
-          +创建芝士
-      }
-      PizzaIngredientFactory <|.. ChinaPizzaIngredientFactory
-      class ChinaPizzaIngredientFactory{
-          +创建蘸酱
-          +创建面饼
-          +创建蔬菜
-          +创建肉
-          +创建芝士
-      }
-      蘸酱 <|.. 北京蘸酱
-      蘸酱 <|.. 纽约蘸酱
-      PizzaIngredientFactory --|>蘸酱
-      NYPizzaIngredientFactory --|>纽约蘸酱
-      ChinaPizzaIngredientFactory --|>北京蘸酱
-      NYPizza --|>蘸酱
-      class 蘸酱{
-          <<interface>>    
-      }
-      面饼 <|.. 北京面饼
-      面饼 <|.. 纽约面饼
-      PizzaIngredientFactory --|>面饼
-      NYPizzaIngredientFactory --|>纽约面饼
-      ChinaPizzaIngredientFactory --|>北京面饼
-      NYPizza --|>面饼
-      class 面饼{
-          <<interface>>    
-      }
-      芝士 <|.. 北京芝士
-      芝士 <|.. 纽约芝士
-      PizzaIngredientFactory --|>芝士
-      NYPizzaIngredientFactory --|>纽约芝士
-      ChinaPizzaIngredientFactory --|>北京芝士
-      NYPizza --|>芝士
-      NYPizza --|>PizzaIngredientFactory
-      class 芝士{
-          <<interface>>    
-      }</pre>
-
+        }
+        class ChinaPizza{
+        }</pre>
 
 
 </li>
-</ol>
+</ul>
 </li>
 </ol>
+<pre><code>    ```</code></pre>
+<ul>
+<li>解释<br>   满足于连锁店，多个具体产品要适应多种地域特色，比如纽约的具体产品和中国的具体产品是味道是不一样的。<br>   抽象创建者（Creator）类  PizzaStore 定义了一个抽象的工厂方法 createPizza，让子类（具体创建者）实现此方法制造自己的产品，他通常包含依赖于抽象产品的代码，而这些抽象产品由子类制造，他并不需要真的知道 在制造哪种具体产品。<br>   工厂生产产品，对于创建者 PizzaStore来说，产品就是Pizza，他的子类是具体的产品，所有实际生产出来的Pizza 都是他的子类。</li>
+<li>优缺点<br>   解决了产品维度新增问题（新增具体产品的问题），只需要创建Pizza子类 ，并创建PizzaStore（创建者）的子类即可。</li>
+<li>引申 <ul>
+<li>依赖倒置原则（要依赖抽象，不要依赖具体类）<br>变量不可以持有具体类的引用<br>不要让类派生自具体类<br>不要覆盖基类中已实现的方法</li>
+</ul>
+</li>
+</ul>
 <ol start="3">
-<li>解释</li>
+<li><p>抽象工厂模式</p>
+<ul>
+<li><p>定义<br>  提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。</p>
+</li>
+<li><p>类图</p>
+   <pre class="mermaid">            classDiagram
+           PizzaStore <|.. NYPizzaStore
+           PizzaStore <|.. ChinaPizzaStore
+           PizzaStore --|> Pizza
+           Pizza <|.. ChinaPizza
+           Pizza <|.. NYPizza
+           NYPizzaStore --|> NYPizza
+           ChinaPizzaStore --|>ChinaPizza
+           <&lt;abstract>> Pizza
+           Pizza : +String name
+           Pizza : +String area
+           Pizza : +准备材料()
+           Pizza : +烘焙()
+           Pizza : +装饰()
+           Pizza : +打包()
+           class PizzaStore{
+                   <&lt;abstract>>
+               +final OrderPizza()
+               +Pizza createPizza()
+           }
+           class NYPizzaStore{
+               +Pizza createPizza()
+           }
+           class ChinaPizzaStore{
+               +Pizza createPizza()
+           }
+
+           class NYPizza{
+
+           }
+           class ChinaPizza{
+           }
+           NYPizzaIngredientFactory <|-- NYPizzaStore
+           class PizzaIngredientFactory{
+               <&lt;interface>>
+               +创建蘸酱
+               +创建面饼
+               +创建蔬菜
+               +创建肉
+               +创建芝士
+           }
+           PizzaIngredientFactory <|.. NYPizzaIngredientFactory
+           class NYPizzaIngredientFactory{
+               +创建蘸酱
+               +创建面饼
+               +创建蔬菜
+               +创建肉
+               +创建芝士
+           }
+           PizzaIngredientFactory <|.. ChinaPizzaIngredientFactory
+           class ChinaPizzaIngredientFactory{
+               +创建蘸酱
+               +创建面饼
+               +创建蔬菜
+               +创建肉
+               +创建芝士
+           }
+           蘸酱 <|.. 北京蘸酱
+           蘸酱 <|.. 纽约蘸酱
+           PizzaIngredientFactory --|>蘸酱
+           NYPizzaIngredientFactory --|>纽约蘸酱
+           ChinaPizzaIngredientFactory --|>北京蘸酱
+           NYPizza --|>蘸酱
+           class 蘸酱{
+               <&lt;interface>>    
+           }
+           面饼 <|.. 北京面饼
+           面饼 <|.. 纽约面饼
+           PizzaIngredientFactory --|>面饼
+           NYPizzaIngredientFactory --|>纽约面饼
+           ChinaPizzaIngredientFactory --|>北京面饼
+           NYPizza --|>面饼
+           class 面饼{
+               <&lt;interface>>    
+           }
+           芝士 <|.. 北京芝士
+           芝士 <|.. 纽约芝士
+           PizzaIngredientFactory --|>芝士
+           NYPizzaIngredientFactory --|>纽约芝士
+           ChinaPizzaIngredientFactory --|>北京芝士
+           NYPizza --|>芝士
+           NYPizza --|>PizzaIngredientFactory
+           class 芝士{
+               <&lt;interface>>    
+           }</pre>
+</li>
+<li><p>解释<br>NYPizzaStore 是抽象工厂的客户，负责创建Pizza 具体产品（NYPizza） ， 传入原料工厂的实例（NYPizzaIngredientFactory），工厂被要求准备原料。<br>PizzaIngredientFactory 是抽象的Pizza原料工厂接口，他定义了如何产生一个相关产品的家族，这个家族包含了所有制作Pizza的原料，子类负责生产Pizza原料，每个工厂都知道如何产生符合自己区域的正确产品，对于此产品家族，每个工厂都有不同的实现，ChinaPizzaIngredientFactory，生产 北京面饼、北京芝士、北京蘸酱。</p>
+</li>
+</ul>
+</li>
 </ol>
-<p>​            NYPizzaStore 是抽象工厂的客户，负责创建Pizza 具体产品（NYPizza） ， 传入原料工厂的实例（NYPizzaIngredientFactory），工厂被要求准备原料。</p>
-<p>​            PizzaIngredientFactory 是抽象的Pizza原料工厂接口，他定义了如何产生一个相关产品的家族，这个家族包含了所有制作Pizza的原料，子类负责生产Pizza原料，每个工厂都知道如何产生符合自己区域的正确产品，对于此产品家族，每个工厂都有不同的实现，ChinaPizzaIngredientFactory，生产 北京面饼、北京芝士、北京蘸酱。</p>
-<p>分享程序员的理财、生活！我是乐子，多多指教！<br>                                                    - EOF -<br>   <img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></p>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<ul>
+<li>EOF -<br><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></li>
+</ul>
 
     
 
@@ -750,10 +735,17 @@
   	</span>
   
   
-	<script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/mermaid@8.13.6/dist/mermaid.min.js'></script>
 	<script>
 	  if (window.mermaid) {
-		mermaid.initialize({theme: 'forest'});
+		mermaid.initialize({theme: 'dark',//default, forest, dark or neutral
+    //   themeCSS: '.node rect { fill: red; }',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 },});
+		
+
 	  }
 	</script>
   

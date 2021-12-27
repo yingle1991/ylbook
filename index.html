@@ -304,11 +304,9 @@
     
     <ol>
 <li><p>简单工厂模式</p>
-<ol>
+<ul>
 <li><p>定义</p>
 <p>严格意义简单工厂模式并非设计模式，比较像一种编码习惯。由于经常被使用，因此被大多数程序研发人员误认为是“工厂模式”。</p>
-</li>
-</ol>
     
     <a class="article-more-a" href="/2021/12/21/2021-12-21-work-Blog/#more">more >></a>
     
@@ -1266,10 +1264,17 @@
   	</span>
   
   
-	<script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/mermaid@8.13.6/dist/mermaid.min.js'></script>
 	<script>
 	  if (window.mermaid) {
-		mermaid.initialize({theme: 'forest'});
+		mermaid.initialize({theme: 'dark',//default, forest, dark or neutral
+    //   themeCSS: '.node rect { fill: red; }',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 },});
+		
+
 	  }
 	</script>
   
