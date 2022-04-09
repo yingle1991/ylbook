@@ -273,6 +273,215 @@
             
 
   
+    <article id="post-2022-04-02-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2022/03/01/2022-04-02-work-Blog/" target="_blank">Mac本地Flutter版本切换</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2022/03/01/2022-04-02-work-Blog/" class="archive-article-date">
+        <time datetime="2022-02-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><em>前置：学会消费者设计模式</em></p>
+<h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p>近期集团在做工厂层移动应用，因为是工厂嘛，要对接各种个样的设备（门禁、称重、装车），所以核心应用都放在了各个工厂内。而移动端想统一、统筹管理，想把应用接口提到上层管理配置，而由于项目没有引入mq消息队列框架， 所以创建一个轻量级消息队列来缓存 各个工厂的接口地址与密钥，内存的话肯定选择 redis 啊，废话不多说直接干吧：</p>
+<p>我们先来比较一下 redis 消息队列的两种方式RPOP LPUSH vs Pub/Sub</p>
+<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><ol>
+<li>Pub/Sub 订阅/发布</li>
+</ol>
+<ul>
+<li><p>这种模式就好比 无线电台，所有订阅队列的使用者豆浆接受发不到该队列的所有消息。</p>
+</li>
+<li><p>工作流程</p>
+<p>消费者 C1、C2、C3 订阅队列 q<br>生产者 P 将消息m发布到队列 q<br>队列 q 向所有消费者 C1、C2、C3 发送消息</p>
+</li>
+</ul>
+<pre class="mermaid">graph TD
+A[生产者 P] -->|发布消息 m| B(队列 Q)   
+B --> |发送 m| D[消费者 C1]    
+B --> |发送 m| E[消费者 C2]  
+B --> |发送 m| F[消费者 C3]</pre>
+<ul>
+<li><p>优点和问题</p>
+<p>由于内存缓冲区的效率，如果消费者失去了与队列的连接，那么消费者很有可能在连接丢失时丢失消息。Redis服务器决定清除消息缓冲区，为下一个传入的消息节省更多的内存。</p>
+</li>
+</ul>
+<p>分享程序员的理财、生活！我是乐子，多多指教！</p>
+<ul>
+<li>EOF -<br><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></li>
+</ul>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">flutter</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">全栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2022/03/01/2022-04-02-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2022-03-01-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2022/03/01/2022-03-01-work-Blog/" target="_blank">Mac本地Flutter版本切换</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2022/03/01/2022-03-01-work-Blog/" class="archive-article-date">
+        <time datetime="2022-02-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>####Flutter 路径指定 .bash_profile文件配置</p>
+<h6 id="Flutter-路径指定-bash-profile文件配置"><a href="#Flutter-路径指定-bash-profile文件配置" class="headerlink" title="Flutter 路径指定 .bash_profile文件配置"></a>Flutter 路径指定 .bash_profile文件配置</h6><figure class="highlight plain"><figcaption><span>FLUTTER_ROOT</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export PUB_HOSTED_URL&#x3D;https:&#x2F;&#x2F;pub.flutter-io.cn #国内用户需要设置</span><br><span class="line">export FLUTTER_STORAGE_BASE_URL&#x3D;https:&#x2F;&#x2F;storage.flutter-io.cn #国内用户需要设置</span><br><span class="line">export PATH&#x3D;&#x2F;Users&#x2F;xxxx&#x2F;Library&#x2F;Flutter&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+    
+    <a class="article-more-a" href="/2022/03/01/2022-03-01-work-Blog/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">flutter</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">全栈</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2022/03/01/2022-03-01-work-Blog/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2021-12-21-work-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1031,200 +1240,6 @@
 
 
   
-    <article id="post-2021-01-24-tech-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/01/24/2021-01-24-tech-Blog/" target="_blank">阿里服务器安装docker 给小程序 部署 springboot 项目</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/01/24/2021-01-24-tech-Blog/" class="archive-article-date">
-        <time datetime="2021-01-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-24</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>序</p>
-<p>随着小程序的普及，大部分开发者都会有租个阿里服务器为小程序提供接口，恰巧我也正在开发一个股票、新债的小程序，但小程序一般都有两个需求（外网访问、https访问）,接口必须上云，所以才有今天的学习记录~</p>
-<p>一、在你的linux系统中安装docker</p>
-<p><code>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun</code></p>
-<p>剩下的就让机器自己运行就好了</p>
-    
-    <a class="article-more-a" href="/2021/01/24/2021-01-24-tech-Blog/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">理财</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/01/24/2021-01-24-tech-Blog/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2021-01-19-tech-Blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2021/01/19/2021-01-19-tech-Blog/" target="_blank">tomcat https访问部署</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2021/01/19/2021-01-19-tech-Blog/" class="archive-article-date">
-        <time datetime="2021-01-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-19</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h6 id="自签名证书"><a href="#自签名证书" class="headerlink" title="自签名证书"></a>自签名证书</h6><ol>
-<li><p>利用java命令生成自定义签名证书</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -alias tomcat -keypass 123456 -keyalg &quot;RSA&quot; -keystore &quot;e:\tomcat.keystore&quot; </span><br><span class="line">&#x2F;&#x2F;可执行后输入</span><br><span class="line">-storepass 123456</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2021/01/19/2021-01-19-tech-Blog/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">运维</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2021/01/19/2021-01-19-tech-Blog/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1239,7 +1254,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2021 <a href="http://www.blog.rdtalk.cn/" target="_blank">闾丘齐心</a>
+    		&copy; 2018-2022 <a href="http://www.blog.rdtalk.cn/" target="_blank">闾丘齐心</a>
     	</div>
       	<div class="footer-right">
 			
@@ -1446,6 +1461,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">架构之路</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">全栈</a>
               </li>
             
             <div class="clearfix"></div>
