@@ -325,6 +325,11 @@ B --> |发送 m| F[消费者 C3]</pre>
 <p>由于内存缓冲区的效率，如果消费者失去了与队列的连接，那么消费者很有可能在连接丢失时丢失消息。Redis服务器决定清除消息缓冲区，为下一个传入的消息节省更多的内存。</p>
 </li>
 </ul>
+<pre><code class="yuml">(start)-&gt;&lt;a&gt;[kettle empty]-&gt;(Fill Kettle)-&gt;|b|
+&lt;a&gt;[kettle full]-&gt;|b|-&gt;(Boil Kettle)-&gt;|c|
+|b|-&gt;(Add Tea Bag)-&gt;(Add Milk)-&gt;|c|-&gt;(Pour Water)
+(Pour Water)-&gt;(end)
+</code></pre>
 <p>分享程序员的理财、生活！我是乐子，多多指教！</p>
 <ul>
 <li>EOF -<br><img src="https://gitee.com/yingle1991/resource/raw/master/static/blog/passme.png" alt="关注我得到更多信息"></li>
